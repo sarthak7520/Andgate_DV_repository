@@ -14,4 +14,4 @@ It will serve as a central place to store and collaborate on **all projects, tes
   - Avoid making changes to other engineers’ branches.  
   - Use `push` and `pull` operations responsibly.  
 
-By following these practices, we can maintain a clean and efficient repository that benefits everyone.  
+By following these practices, we can maintain a clean and efficient repository that benefits everyone.  ...

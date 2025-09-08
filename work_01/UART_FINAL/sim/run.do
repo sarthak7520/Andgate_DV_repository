@@ -5,7 +5,9 @@
 # -------------------------------
 # Clean previous simulation
 # -------------------------------
-vdel -all
+if {[file exists work]} {
+    vdel -all
+}
 vlib work
 vmap work work
 

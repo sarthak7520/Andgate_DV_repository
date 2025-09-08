@@ -1,5 +1,5 @@
 # vsim -c -quiet -l logs/uart_status_read_test.log -do "run -all; quit -f" apb_uart_tb "+UVM_TESTNAME=uart_status_read_test" 
-# Start time: 13:18:21 on Sep 07,2025
+# Start time: 14:51:44 on Sep 08,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim-64
 # //  Version 10.7c win64 Aug 18 2018
@@ -76,5 +76,5 @@
 # [UART_STATUS]     2
 # ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 610 ns  Iteration: 61  Instance: /apb_uart_tb
-# End time: 13:18:27 on Sep 07,2025, Elapsed time: 0:00:06
+# End time: 14:51:50 on Sep 08,2025, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 0

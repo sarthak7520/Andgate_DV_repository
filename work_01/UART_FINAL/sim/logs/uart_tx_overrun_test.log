@@ -1,0 +1,391 @@
+# vsim -c -quiet -l logs/uart_tx_overrun_test.log -do "run -all; quit -f" apb_uart_tb "+UVM_TESTNAME=uart_tx_overrun_test" 
+# Start time: 13:16:53 on Sep 07,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_overrun_test...
+# UVM_INFO ../tests/uart_tx_overrun_test.sv(38) @ 0: uvm_test_top [TEST] Running UART TX Overrun test
+# MONITOR:Waiting for reset deassertion...
+# ******************ENTERED INTO MONITOR befoer forever*********
+# [500] APB DRIVER: Starting after reset deassertion
+# MONITOR:Reset deasserted, starting monitor...
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 510: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x10 WDATA=0x1b WRITE=1
+# [550] APB DRIVER: Setup done, waiting one clock before access
+# [570] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [570] APB DRIVER: PREADY seen for ADDR=0x4
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# RDATA = 0 
+# [610] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 610: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x8 WDATA=0x1 WRITE=1
+# [650] APB DRIVER: Setup done, waiting one clock before access
+# [670] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [670] APB DRIVER: PREADY seen for ADDR=0x2
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 2, WDATA= 1, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 2, WDATA= 1, RDATA= 0
+# RDATA = 0 
+# [710] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 2, WDATA= 1, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 2, WDATA= 1, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 710: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xf0 WRITE=1
+# [750] APB DRIVER: Setup done, waiting one clock before access
+# [770] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [770] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 240, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 240, RDATA= 0
+# RDATA = 0 
+# [810] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 240, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 240, RDATA= 0
+# UVM_INFO ..\uvm_tb\uart_monitor.sv(28) @ 810: uvm_test_top.env.uart_ag.m_monitor [UART_MON] Detected start bit
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 910: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xde WRITE=1
+# [950] APB DRIVER: Setup done, waiting one clock before access
+# [970] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [970] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 222, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 222, RDATA= 0
+# RDATA = 0 
+# [1010] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 222, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 222, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 1110: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xe1 WRITE=1
+# [1150] APB DRIVER: Setup done, waiting one clock before access
+# [1170] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [1170] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 225, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 225, RDATA= 0
+# RDATA = 0 
+# [1210] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 225, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 225, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 1310: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x8e WRITE=1
+# [1350] APB DRIVER: Setup done, waiting one clock before access
+# [1370] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [1370] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 142, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 142, RDATA= 0
+# RDATA = 0 
+# [1410] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 142, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 142, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 1510: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xf4 WRITE=1
+# [1550] APB DRIVER: Setup done, waiting one clock before access
+# [1570] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [1570] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 244, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 244, RDATA= 0
+# RDATA = 0 
+# [1610] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 244, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 244, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 1710: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x3 WRITE=1
+# [1750] APB DRIVER: Setup done, waiting one clock before access
+# [1770] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [1770] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 3, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 3, RDATA= 0
+# RDATA = 0 
+# [1810] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 3, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 3, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 1910: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x96 WRITE=1
+# [1950] APB DRIVER: Setup done, waiting one clock before access
+# [1970] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [1970] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 150, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 150, RDATA= 0
+# RDATA = 0 
+# [2010] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 150, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 150, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 2110: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xfb WRITE=1
+# [2150] APB DRIVER: Setup done, waiting one clock before access
+# [2170] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [2170] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 251, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 251, RDATA= 0
+# RDATA = 0 
+# [2210] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 251, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 251, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 2310: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xa4 WRITE=1
+# [2350] APB DRIVER: Setup done, waiting one clock before access
+# [2370] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [2370] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 164, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 164, RDATA= 0
+# RDATA = 0 
+# [2410] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 164, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 164, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 2510: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xf8 WRITE=1
+# [2550] APB DRIVER: Setup done, waiting one clock before access
+# [2570] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [2570] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 248, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 248, RDATA= 0
+# RDATA = 0 
+# [2610] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 248, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 248, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 2710: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x42 WRITE=1
+# [2750] APB DRIVER: Setup done, waiting one clock before access
+# [2770] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [2770] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 66, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 66, RDATA= 0
+# RDATA = 0 
+# [2810] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 66, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 66, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 2910: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x7f WRITE=1
+# [2950] APB DRIVER: Setup done, waiting one clock before access
+# [2970] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [2970] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 127, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 127, RDATA= 0
+# RDATA = 0 
+# [3010] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 127, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 127, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 3110: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xc WRITE=1
+# [3150] APB DRIVER: Setup done, waiting one clock before access
+# [3170] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [3170] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 12, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 12, RDATA= 0
+# RDATA = 0 
+# [3210] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 12, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 12, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 3310: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x8b WRITE=1
+# [3350] APB DRIVER: Setup done, waiting one clock before access
+# [3370] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [3370] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 139, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 139, RDATA= 0
+# RDATA = 0 
+# [3410] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 139, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 139, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 3510: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x20 WRITE=1
+# [3550] APB DRIVER: Setup done, waiting one clock before access
+# [3570] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [3570] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 32, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 32, RDATA= 0
+# RDATA = 0 
+# [3610] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 32, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 32, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 3710: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xbd WRITE=1
+# [3750] APB DRIVER: Setup done, waiting one clock before access
+# [3770] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [3770] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 189, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 189, RDATA= 0
+# RDATA = 0 
+# [3810] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 189, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 189, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 3910: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xa8 WRITE=1
+# [3950] APB DRIVER: Setup done, waiting one clock before access
+# [3970] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [3970] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 168, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 168, RDATA= 0
+# RDATA = 0 
+# [4010] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 168, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 168, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 4110: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x69 WRITE=1
+# [4150] APB DRIVER: Setup done, waiting one clock before access
+# [4170] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [4170] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 105, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 105, RDATA= 0
+# RDATA = 0 
+# [4210] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 105, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 105, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 4310: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x7d WRITE=1
+# [4350] APB DRIVER: Setup done, waiting one clock before access
+# [4370] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [4370] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 125, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 125, RDATA= 0
+# RDATA = 0 
+# [4410] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 125, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 125, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 4510: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x4f WRITE=1
+# [4550] APB DRIVER: Setup done, waiting one clock before access
+# [4570] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [4570] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 79, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 79, RDATA= 0
+# RDATA = 0 
+# [4610] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 79, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 79, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 4710: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0xe6 WRITE=1
+# [4750] APB DRIVER: Setup done, waiting one clock before access
+# [4770] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [4770] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 230, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 230, RDATA= 0
+# RDATA = 0 
+# [4810] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 0, WDATA= 230, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 0, WDATA= 230, RDATA= 0
+# UVM_INFO ../tests/uart_tx_overrun_test.sv(57) @ 4910: uvm_test_top [UART_TX_OVERRUN] Check STATUS for TX overrun flag
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 4910: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   30
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [APB DRIVER]    23
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST]     1
+# [TEST_DONE]     1
+# [UART_MON]     1
+# [UART_TX_OVERRUN]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 4910 ns  Iteration: 54  Instance: /apb_uart_tb
+# End time: 13:16:55 on Sep 07,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

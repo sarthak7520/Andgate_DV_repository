@@ -1,0 +1,159 @@
+# vsim -c -quiet -l logs/uart_rx_only_test.log -do "run -all; quit -f" apb_uart_tb "+UVM_TESTNAME=uart_rx_only_test" 
+# Start time: 13:18:28 on Sep 07,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_rx_only_test...
+# UVM_INFO ../tests/uart_rx_only_test.sv(41) @ 0: uvm_test_top [TEST] Running UART RX-only test
+# MONITOR:Waiting for reset deassertion...
+# ******************ENTERED INTO MONITOR befoer forever*********
+# [500] APB DRIVER: Starting after reset deassertion
+# MONITOR:Reset deasserted, starting monitor...
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 510: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x10 WDATA=0x1b WRITE=1
+# [550] APB DRIVER: Setup done, waiting one clock before access
+# [570] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [570] APB DRIVER: PREADY seen for ADDR=0x4
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# RDATA = 0 
+# [610] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 4, WDATA= 27, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 610: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x8 WDATA=0x2 WRITE=1
+# [650] APB DRIVER: Setup done, waiting one clock before access
+# [670] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [670] APB DRIVER: PREADY seen for ADDR=0x2
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 2, WDATA= 2, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 2, WDATA= 2, RDATA= 0
+# RDATA = 0 
+# [710] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =1, ADDR = 2, WDATA= 2, RDATA= 0
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =1, ADDR = 2, WDATA= 2, RDATA= 0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 33910: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x0 WRITE=0
+# [33950] APB DRIVER: Setup done, waiting one clock before access
+# [33970] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [33970] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# RDATA = 224 
+# UVM_ERROR ..\uvm_tb\apb_uart_scoreboard.sv(42) @ 33990: uvm_test_top.env.scb [RX_MISCOMPARE] Expected RX=0x11 Observed=0xe0
+# [34010] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# UVM_ERROR ..\uvm_tb\apb_uart_scoreboard.sv(42) @ 34010: uvm_test_top.env.scb [RX_MISCOMPARE] Expected RX=0x22 Observed=0xe0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 34310: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x0 WRITE=0
+# [34350] APB DRIVER: Setup done, waiting one clock before access
+# [34370] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [34370] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# RDATA = 224 
+# UVM_ERROR ..\uvm_tb\apb_uart_scoreboard.sv(42) @ 34390: uvm_test_top.env.scb [RX_MISCOMPARE] Expected RX=0x7e Observed=0xe0
+# [34410] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# UVM_ERROR ..\uvm_tb\apb_uart_scoreboard.sv(42) @ 34410: uvm_test_top.env.scb [RX_MISCOMPARE] Expected RX=0x80 Observed=0xe0
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 34710: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x0 WRITE=0
+# [34750] APB DRIVER: Setup done, waiting one clock before access
+# [34770] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [34770] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# RDATA = 224 
+# [34810] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# UVM_INFO ..\uvm_tb\apb_driver.sv(42) @ 35110: uvm_test_top.env.apb_ag.m_driver [APB DRIVER] Got transaction: ADDR=0x0 WDATA=0x0 WRITE=0
+# [35150] APB DRIVER: Setup done, waiting one clock before access
+# [35170] APB DRIVER: Access phase, PSEL=1 PENABLE=0
+# [35170] APB DRIVER: PREADY seen for ADDR=0x0
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# RDATA = 224 
+# [35210] APB DRIVER: Transaction completed
+# ******************ENTERED INTO MONITOR*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# ******************ENTERED INTO MONITOR: AFTER WRITE(TR)*************************
+# WRITE =0, ADDR = 0, WDATA= 0, RDATA= 224
+# UVM_ERROR ../tests/uart_rx_only_test.sv(83) @ 37510: uvm_test_top [UART_RX_FAIL] RX mismatch at index 0: Expected=0x11 Observed=0xe0
+# UVM_ERROR ../tests/uart_rx_only_test.sv(83) @ 37510: uvm_test_top [UART_RX_FAIL] RX mismatch at index 1: Expected=0x22 Observed=0xe0
+# UVM_ERROR ../tests/uart_rx_only_test.sv(83) @ 37510: uvm_test_top [UART_RX_FAIL] RX mismatch at index 2: Expected=0x7e Observed=0xe0
+# UVM_ERROR ../tests/uart_rx_only_test.sv(83) @ 37510: uvm_test_top [UART_RX_FAIL] RX mismatch at index 3: Expected=0x80 Observed=0xe0
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 37510: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   11
+# UVM_WARNING :    0
+# UVM_ERROR :    8
+# UVM_FATAL :    0
+# ** Report counts by id
+# [APB DRIVER]     6
+# [Questa UVM]     2
+# [RNTST]     1
+# [RX_MISCOMPARE]     4
+# [TEST]     1
+# [TEST_DONE]     1
+# [UART_RX_FAIL]     4
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 37510 ns  Iteration: 54  Instance: /apb_uart_tb
+# End time: 13:18:31 on Sep 07,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

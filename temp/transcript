@@ -1,0 +1,2580 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim top -do "run -all; quit" 
+# Start time: 15:57:31 on Sep 15,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.wb_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.wb_pkg(fast)
+# Loading work.top(fast)
+# Loading work.sdrc_top(fast)
+# Loading work.mt48lc8m8a2(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0 ns: reporter [RNTST] Running test sdram_test...
+# wb_env::: i am build_phase env
+# wb_agent::: i am build_phase agent
+# __________i am in sequencer
+# ---------------start_run_phase-----------
+# UVM_INFO wb_driver.sv(36) @ 0 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x0 we=0 sel=0x0 data=0x0
+# driver end
+# ___________driver run phase__________
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 100 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 100 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0xd data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 105 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0x2 data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 105 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 105 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0x2 data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 115 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0xf data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 115 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 115 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0xf data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 125 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0xd data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 125 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 125 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0xd data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 135 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0x7 data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 135 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# _____________read_seq started
+# __________read_start________
+# at time     10132 ns PRE  : Bank = ALL
+# at time     10212 ns AREF : Auto Refresh
+# at time     10392 ns AREF : Auto Refresh
+# at time     10572 ns AREF : Auto Refresh
+# at time     10752 ns AREF : Auto Refresh
+# at time     10932 ns AREF : Auto Refresh
+# at time     11112 ns AREF : Auto Refresh
+# at time     11292 ns AREF : Auto Refresh
+# at time     11472 ns AREF : Auto Refresh
+# at time     11652 ns AREF : Auto Refresh
+# at time     11832 ns AREF : Auto Refresh
+# at time     12012 ns AREF : Auto Refresh
+# at time     12192 ns AREF : Auto Refresh
+# at time     12372 ns AREF : Auto Refresh
+# at time     12552 ns AREF : Auto Refresh
+# at time     12732 ns AREF : Auto Refresh
+# at time     12912 ns LMR  : Load Mode Register
+#                             CAS Latency      = 3
+#                             Burst Length     = 8
+#                             Burst Type       = Sequential
+#                             Write Burst Mode = Programmed Burst Length
+# at time     13112 ns PRE  : Bank = 0
+# at time     13172 ns ACT  : Bank = 0 Row =    0
+# at time     13278 ns READ : Bank = 0 Row =    0, Col =   4, Data = xx, Dqm = 0
+# at time     13298 ns READ : Bank = 0 Row =    0, Col =   5, Data = xx, Dqm = 0
+# at time     13312 ns BST  : Burst Terminate
+# at time     13318 ns READ : Bank = 0 Row =    0, Col =   6, Data = xx, Dqm = 0
+# at time     13338 ns READ : Bank = 0 Row =    0, Col =   7, Data = xx, Dqm = 0
+# driver end
+# ___________driver run phase__________
+# __________read_end________
+# UVM_INFO write_seq.sv(80) @ 13405 ns: uvm_test_top.env.agent.seqr@@r_seq [READ_SEQ] Read data=0x0 from addr=0x4000004
+# _____________read_seq ended
+# at time     40972 ns PRE  : Bank = ALL
+# at time     41052 ns AREF : Auto Refresh
+# at time     41232 ns AREF : Auto Refresh
+# at time     41412 ns AREF : Auto Refresh
+# at time     41592 ns AREF : Auto Refresh
+# at time     41772 ns AREF : Auto Refresh
+# at time     41952 ns AREF : Auto Refresh
+# at time     71812 ns PRE  : Bank = ALL
+# at time     71892 ns AREF : Auto Refresh
+# at time     72072 ns AREF : Auto Refresh
+# at time     72252 ns AREF : Auto Refresh
+# at time     72432 ns AREF : Auto Refresh
+# at time     72612 ns AREF : Auto Refresh
+# at time     72792 ns AREF : Auto Refresh
+# at time    102652 ns PRE  : Bank = ALL
+# at time    102732 ns AREF : Auto Refresh
+# at time    102912 ns AREF : Auto Refresh
+# at time    103092 ns AREF : Auto Refresh
+# at time    103272 ns AREF : Auto Refresh
+# at time    103452 ns AREF : Auto Refresh
+# at time    103632 ns AREF : Auto Refresh
+# at time    133492 ns PRE  : Bank = ALL
+# at time    133572 ns AREF : Auto Refresh
+# at time    133752 ns AREF : Auto Refresh
+# at time    133932 ns AREF : Auto Refresh
+# at time    134112 ns AREF : Auto Refresh
+# at time    134292 ns AREF : Auto Refresh
+# at time    134472 ns AREF : Auto Refresh
+# at time    164332 ns PRE  : Bank = ALL
+# at time    164412 ns AREF : Auto Refresh
+# at time    164592 ns AREF : Auto Refresh
+# at time    164772 ns AREF : Auto Refresh
+# at time    164952 ns AREF : Auto Refresh
+# at time    165132 ns AREF : Auto Refresh
+# at time    165312 ns AREF : Auto Refresh
+# at time    195172 ns PRE  : Bank = ALL
+# at time    195252 ns AREF : Auto Refresh
+# at time    195432 ns AREF : Auto Refresh
+# at time    195612 ns AREF : Auto Refresh
+# at time    195792 ns AREF : Auto Refresh
+# at time    195972 ns AREF : Auto Refresh
+# at time    196152 ns AREF : Auto Refresh
+# --------------end_run_phase---------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 200000 ns: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   19
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [READ_SEQ]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [WB_DRIVER]     5
+# [WB_MON]     4
+# [WRITE_SEQ]     5
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 200 us  Iteration: 54  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+add wave -position insertpoint sim:/top/wb_vif/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Peeyush  Hostname: LAPTOP-TDPJLNDO  ProcessID: 12176
+#           Attempting to use alternate WLF file "./wlftj9n3tg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj9n3tg
+#  quit
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.wb_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.wb_pkg(fast)
+# Loading work.top(fast)
+# Loading work.sdrc_top(fast)
+# Loading work.mt48lc8m8a2(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0 ns: reporter [RNTST] Running test sdram_test...
+# wb_env::: i am build_phase env
+# wb_agent::: i am build_phase agent
+# __________i am in sequencer
+# ---------------start_run_phase-----------
+# UVM_INFO wb_driver.sv(36) @ 0 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x0 we=0 sel=0x0 data=0x0
+# driver end
+# ___________driver run phase__________
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 100 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 100 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0xd data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 105 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0x2 data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 105 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 105 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0x2 data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 115 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0xf data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 115 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 115 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0xf data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 125 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0xd data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 125 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# UVM_INFO wb_driver.sv(36) @ 125 ns: uvm_test_top.env.agent.drv [WB_DRIVER]  addr=0x4 we=1 sel=0xd data=0x5
+# driver end
+# ___________driver run phase__________
+# UVM_INFO wb_monitor.sv(46) @ 135 ns: uvm_test_top.env.agent.mon [WB_MON] addr=0x4 we=1 sel=0x7 data=0x0 rdata=0x0
+# __________write_end________
+# UVM_INFO write_seq.sv(52) @ 135 ns: uvm_test_top.env.agent.seqr@@w_seq [WRITE_SEQ] Wrote addr=0x4000004 data=0x5
+# _____________read_seq started
+# __________read_start________
+# at time     10132 ns PRE  : Bank = ALL
+# at time     10212 ns AREF : Auto Refresh
+# at time     10392 ns AREF : Auto Refresh
+# at time     10572 ns AREF : Auto Refresh
+# at time     10752 ns AREF : Auto Refresh
+# at time     10932 ns AREF : Auto Refresh
+# at time     11112 ns AREF : Auto Refresh
+# at time     11292 ns AREF : Auto Refresh
+# at time     11472 ns AREF : Auto Refresh
+# at time     11652 ns AREF : Auto Refresh
+# at time     11832 ns AREF : Auto Refresh
+# at time     12012 ns AREF : Auto Refresh
+# at time     12192 ns AREF : Auto Refresh
+# at time     12372 ns AREF : Auto Refresh
+# at time     12552 ns AREF : Auto Refresh
+# at time     12732 ns AREF : Auto Refresh
+# at time     12912 ns LMR  : Load Mode Register
+#                             CAS Latency      = 3
+#                             Burst Length     = 8
+#                             Burst Type       = Sequential
+#                             Write Burst Mode = Programmed Burst Length
+# at time     13112 ns PRE  : Bank = 0
+# at time     13172 ns ACT  : Bank = 0 Row =    0
+# at time     13278 ns READ : Bank = 0 Row =    0, Col =   4, Data = xx, Dqm = 0
+# at time     13298 ns READ : Bank = 0 Row =    0, Col =   5, Data = xx, Dqm = 0
+# at time     13312 ns BST  : Burst Terminate
+# at time     13318 ns READ : Bank = 0 Row =    0, Col =   6, Data = xx, Dqm = 0
+# at time     13338 ns READ : Bank = 0 Row =    0, Col =   7, Data = xx, Dqm = 0
+# driver end
+# ___________driver run phase__________
+# __________read_end________
+# UVM_INFO write_seq.sv(80) @ 13405 ns: uvm_test_top.env.agent.seqr@@r_seq [READ_SEQ] Read data=0x0 from addr=0x4000004
+# _____________read_seq ended
+# at time     40972 ns PRE  : Bank = ALL
+# at time     41052 ns AREF : Auto Refresh
+# at time     41232 ns AREF : Auto Refresh
+# at time     41412 ns AREF : Auto Refresh
+# at time     41592 ns AREF : Auto Refresh
+# at time     41772 ns AREF : Auto Refresh
+# at time     41952 ns AREF : Auto Refresh
+# at time     71812 ns PRE  : Bank = ALL
+# at time     71892 ns AREF : Auto Refresh
+# at time     72072 ns AREF : Auto Refresh
+# at time     72252 ns AREF : Auto Refresh
+# at time     72432 ns AREF : Auto Refresh
+# at time     72612 ns AREF : Auto Refresh
+# at time     72792 ns AREF : Auto Refresh
+# at time    102652 ns PRE  : Bank = ALL
+# at time    102732 ns AREF : Auto Refresh
+# at time    102912 ns AREF : Auto Refresh
+# at time    103092 ns AREF : Auto Refresh
+# at time    103272 ns AREF : Auto Refresh
+# at time    103452 ns AREF : Auto Refresh
+# at time    103632 ns AREF : Auto Refresh
+# at time    133492 ns PRE  : Bank = ALL
+# at time    133572 ns AREF : Auto Refresh
+# at time    133752 ns AREF : Auto Refresh
+# at time    133932 ns AREF : Auto Refresh
+# at time    134112 ns AREF : Auto Refresh
+# at time    134292 ns AREF : Auto Refresh
+# at time    134472 ns AREF : Auto Refresh
+# at time    164332 ns PRE  : Bank = ALL
+# at time    164412 ns AREF : Auto Refresh
+# at time    164592 ns AREF : Auto Refresh
+# at time    164772 ns AREF : Auto Refresh
+# at time    164952 ns AREF : Auto Refresh
+# at time    165132 ns AREF : Auto Refresh
+# at time    165312 ns AREF : Auto Refresh
+# at time    195172 ns PRE  : Bank = ALL
+# at time    195252 ns AREF : Auto Refresh
+# at time    195432 ns AREF : Auto Refresh
+# at time    195612 ns AREF : Auto Refresh
+# at time    195792 ns AREF : Auto Refresh
+# at time    195972 ns AREF : Auto Refresh
+# at time    196152 ns AREF : Auto Refresh
+# --------------end_run_phase---------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 200000 ns: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   19
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [READ_SEQ]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [WB_DRIVER]     5
+# [WB_MON]     4
+# [WRITE_SEQ]     5
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 200 us  Iteration: 54  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+add wave -position end sim:/top/u_sdram8/*
+run -all
+# at time    226012 ns PRE  : Bank = ALL
+# at time    226092 ns AREF : Auto Refresh
+# at time    226272 ns AREF : Auto Refresh
+# at time    226452 ns AREF : Auto Refresh
+# at time    226632 ns AREF : Auto Refresh
+# at time    226812 ns AREF : Auto Refresh
+# at time    226992 ns AREF : Auto Refresh
+# at time    256852 ns PRE  : Bank = ALL
+# at time    256932 ns AREF : Auto Refresh
+# at time    257112 ns AREF : Auto Refresh
+# at time    257292 ns AREF : Auto Refresh
+# at time    257472 ns AREF : Auto Refresh
+# at time    257652 ns AREF : Auto Refresh
+# at time    257832 ns AREF : Auto Refresh
+# at time    287692 ns PRE  : Bank = ALL
+# at time    287772 ns AREF : Auto Refresh
+# at time    287952 ns AREF : Auto Refresh
+# at time    288132 ns AREF : Auto Refresh
+# at time    288312 ns AREF : Auto Refresh
+# at time    288492 ns AREF : Auto Refresh
+# at time    288672 ns AREF : Auto Refresh
+# at time    318532 ns PRE  : Bank = ALL
+# at time    318612 ns AREF : Auto Refresh
+# at time    318792 ns AREF : Auto Refresh
+# at time    318972 ns AREF : Auto Refresh
+# at time    319152 ns AREF : Auto Refresh
+# at time    319332 ns AREF : Auto Refresh
+# at time    319512 ns AREF : Auto Refresh
+# at time    349372 ns PRE  : Bank = ALL
+# at time    349452 ns AREF : Auto Refresh
+# at time    349632 ns AREF : Auto Refresh
+# at time    349812 ns AREF : Auto Refresh
+# at time    349992 ns AREF : Auto Refresh
+# at time    350172 ns AREF : Auto Refresh
+# at time    350352 ns AREF : Auto Refresh
+# at time    380212 ns PRE  : Bank = ALL
+# at time    380292 ns AREF : Auto Refresh
+# at time    380472 ns AREF : Auto Refresh
+# at time    380652 ns AREF : Auto Refresh
+# at time    380832 ns AREF : Auto Refresh
+# at time    381012 ns AREF : Auto Refresh
+# at time    381192 ns AREF : Auto Refresh
+# at time    411052 ns PRE  : Bank = ALL
+# at time    411132 ns AREF : Auto Refresh
+# at time    411312 ns AREF : Auto Refresh
+# at time    411492 ns AREF : Auto Refresh
+# at time    411672 ns AREF : Auto Refresh
+# at time    411852 ns AREF : Auto Refresh
+# at time    412032 ns AREF : Auto Refresh
+# at time    441892 ns PRE  : Bank = ALL
+# at time    441972 ns AREF : Auto Refresh
+# at time    442152 ns AREF : Auto Refresh
+# at time    442332 ns AREF : Auto Refresh
+# at time    442512 ns AREF : Auto Refresh
+# at time    442692 ns AREF : Auto Refresh
+# at time    442872 ns AREF : Auto Refresh
+# at time    472732 ns PRE  : Bank = ALL
+# at time    472812 ns AREF : Auto Refresh
+# at time    472992 ns AREF : Auto Refresh
+# at time    473172 ns AREF : Auto Refresh
+# at time    473352 ns AREF : Auto Refresh
+# at time    473532 ns AREF : Auto Refresh
+# at time    473712 ns AREF : Auto Refresh
+# at time    503572 ns PRE  : Bank = ALL
+# at time    503652 ns AREF : Auto Refresh
+# at time    503832 ns AREF : Auto Refresh
+# at time    504012 ns AREF : Auto Refresh
+# at time    504192 ns AREF : Auto Refresh
+# at time    504372 ns AREF : Auto Refresh
+# at time    504552 ns AREF : Auto Refresh
+# at time    534412 ns PRE  : Bank = ALL
+# at time    534492 ns AREF : Auto Refresh
+# at time    534672 ns AREF : Auto Refresh
+# at time    534852 ns AREF : Auto Refresh
+# at time    535032 ns AREF : Auto Refresh
+# at time    535212 ns AREF : Auto Refresh
+# at time    535392 ns AREF : Auto Refresh
+# at time    565252 ns PRE  : Bank = ALL
+# at time    565332 ns AREF : Auto Refresh
+# at time    565512 ns AREF : Auto Refresh
+# at time    565692 ns AREF : Auto Refresh
+# at time    565872 ns AREF : Auto Refresh
+# at time    566052 ns AREF : Auto Refresh
+# at time    566232 ns AREF : Auto Refresh
+# at time    596092 ns PRE  : Bank = ALL
+# at time    596172 ns AREF : Auto Refresh
+# at time    596352 ns AREF : Auto Refresh
+# at time    596532 ns AREF : Auto Refresh
+# at time    596712 ns AREF : Auto Refresh
+# at time    596892 ns AREF : Auto Refresh
+# at time    597072 ns AREF : Auto Refresh
+# at time    626932 ns PRE  : Bank = ALL
+# at time    627012 ns AREF : Auto Refresh
+# at time    627192 ns AREF : Auto Refresh
+# at time    627372 ns AREF : Auto Refresh
+# at time    627552 ns AREF : Auto Refresh
+# at time    627732 ns AREF : Auto Refresh
+# at time    627912 ns AREF : Auto Refresh
+# at time    657772 ns PRE  : Bank = ALL
+# at time    657852 ns AREF : Auto Refresh
+# at time    658032 ns AREF : Auto Refresh
+# at time    658212 ns AREF : Auto Refresh
+# at time    658392 ns AREF : Auto Refresh
+# at time    658572 ns AREF : Auto Refresh
+# at time    658752 ns AREF : Auto Refresh
+# at time    688612 ns PRE  : Bank = ALL
+# at time    688692 ns AREF : Auto Refresh
+# at time    688872 ns AREF : Auto Refresh
+# at time    689052 ns AREF : Auto Refresh
+# at time    689232 ns AREF : Auto Refresh
+# at time    689412 ns AREF : Auto Refresh
+# at time    689592 ns AREF : Auto Refresh
+# at time    719452 ns PRE  : Bank = ALL
+# at time    719532 ns AREF : Auto Refresh
+# at time    719712 ns AREF : Auto Refresh
+# at time    719892 ns AREF : Auto Refresh
+# at time    720072 ns AREF : Auto Refresh
+# at time    720252 ns AREF : Auto Refresh
+# at time    720432 ns AREF : Auto Refresh
+# at time    750292 ns PRE  : Bank = ALL
+# at time    750372 ns AREF : Auto Refresh
+# at time    750552 ns AREF : Auto Refresh
+# at time    750732 ns AREF : Auto Refresh
+# at time    750912 ns AREF : Auto Refresh
+# at time    751092 ns AREF : Auto Refresh
+# at time    751272 ns AREF : Auto Refresh
+# at time    781132 ns PRE  : Bank = ALL
+# at time    781212 ns AREF : Auto Refresh
+# at time    781392 ns AREF : Auto Refresh
+# at time    781572 ns AREF : Auto Refresh
+# at time    781752 ns AREF : Auto Refresh
+# at time    781932 ns AREF : Auto Refresh
+# at time    782112 ns AREF : Auto Refresh
+# at time    811972 ns PRE  : Bank = ALL
+# at time    812052 ns AREF : Auto Refresh
+# at time    812232 ns AREF : Auto Refresh
+# at time    812412 ns AREF : Auto Refresh
+# at time    812592 ns AREF : Auto Refresh
+# at time    812772 ns AREF : Auto Refresh
+# at time    812952 ns AREF : Auto Refresh
+# at time    842812 ns PRE  : Bank = ALL
+# at time    842892 ns AREF : Auto Refresh
+# at time    843072 ns AREF : Auto Refresh
+# at time    843252 ns AREF : Auto Refresh
+# at time    843432 ns AREF : Auto Refresh
+# at time    843612 ns AREF : Auto Refresh
+# at time    843792 ns AREF : Auto Refresh
+# at time    873652 ns PRE  : Bank = ALL
+# at time    873732 ns AREF : Auto Refresh
+# at time    873912 ns AREF : Auto Refresh
+# at time    874092 ns AREF : Auto Refresh
+# at time    874272 ns AREF : Auto Refresh
+# at time    874452 ns AREF : Auto Refresh
+# at time    874632 ns AREF : Auto Refresh
+# at time    904492 ns PRE  : Bank = ALL
+# at time    904572 ns AREF : Auto Refresh
+# at time    904752 ns AREF : Auto Refresh
+# at time    904932 ns AREF : Auto Refresh
+# at time    905112 ns AREF : Auto Refresh
+# at time    905292 ns AREF : Auto Refresh
+# at time    905472 ns AREF : Auto Refresh
+# at time    935332 ns PRE  : Bank = ALL
+# at time    935412 ns AREF : Auto Refresh
+# at time    935592 ns AREF : Auto Refresh
+# at time    935772 ns AREF : Auto Refresh
+# at time    935952 ns AREF : Auto Refresh
+# at time    936132 ns AREF : Auto Refresh
+# at time    936312 ns AREF : Auto Refresh
+# at time    966172 ns PRE  : Bank = ALL
+# at time    966252 ns AREF : Auto Refresh
+# at time    966432 ns AREF : Auto Refresh
+# at time    966612 ns AREF : Auto Refresh
+# at time    966792 ns AREF : Auto Refresh
+# at time    966972 ns AREF : Auto Refresh
+# at time    967152 ns AREF : Auto Refresh
+# at time    997012 ns PRE  : Bank = ALL
+# at time    997092 ns AREF : Auto Refresh
+# at time    997272 ns AREF : Auto Refresh
+# at time    997452 ns AREF : Auto Refresh
+# at time    997632 ns AREF : Auto Refresh
+# at time    997812 ns AREF : Auto Refresh
+# at time    997992 ns AREF : Auto Refresh
+# at time   1027852 ns PRE  : Bank = ALL
+# at time   1027932 ns AREF : Auto Refresh
+# at time   1028112 ns AREF : Auto Refresh
+# at time   1028292 ns AREF : Auto Refresh
+# at time   1028472 ns AREF : Auto Refresh
+# at time   1028652 ns AREF : Auto Refresh
+# at time   1028832 ns AREF : Auto Refresh
+# at time   1058692 ns PRE  : Bank = ALL
+# at time   1058772 ns AREF : Auto Refresh
+# at time   1058952 ns AREF : Auto Refresh
+# at time   1059132 ns AREF : Auto Refresh
+# at time   1059312 ns AREF : Auto Refresh
+# at time   1059492 ns AREF : Auto Refresh
+# at time   1059672 ns AREF : Auto Refresh
+# at time   1089532 ns PRE  : Bank = ALL
+# at time   1089612 ns AREF : Auto Refresh
+# at time   1089792 ns AREF : Auto Refresh
+# at time   1089972 ns AREF : Auto Refresh
+# at time   1090152 ns AREF : Auto Refresh
+# at time   1090332 ns AREF : Auto Refresh
+# at time   1090512 ns AREF : Auto Refresh
+# at time   1120372 ns PRE  : Bank = ALL
+# at time   1120452 ns AREF : Auto Refresh
+# at time   1120632 ns AREF : Auto Refresh
+# at time   1120812 ns AREF : Auto Refresh
+# at time   1120992 ns AREF : Auto Refresh
+# at time   1121172 ns AREF : Auto Refresh
+# at time   1121352 ns AREF : Auto Refresh
+# at time   1151212 ns PRE  : Bank = ALL
+# at time   1151292 ns AREF : Auto Refresh
+# at time   1151472 ns AREF : Auto Refresh
+# at time   1151652 ns AREF : Auto Refresh
+# at time   1151832 ns AREF : Auto Refresh
+# at time   1152012 ns AREF : Auto Refresh
+# at time   1152192 ns AREF : Auto Refresh
+# at time   1182052 ns PRE  : Bank = ALL
+# at time   1182132 ns AREF : Auto Refresh
+# at time   1182312 ns AREF : Auto Refresh
+# at time   1182492 ns AREF : Auto Refresh
+# at time   1182672 ns AREF : Auto Refresh
+# at time   1182852 ns AREF : Auto Refresh
+# at time   1183032 ns AREF : Auto Refresh
+# at time   1212892 ns PRE  : Bank = ALL
+# at time   1212972 ns AREF : Auto Refresh
+# at time   1213152 ns AREF : Auto Refresh
+# at time   1213332 ns AREF : Auto Refresh
+# at time   1213512 ns AREF : Auto Refresh
+# at time   1213692 ns AREF : Auto Refresh
+# at time   1213872 ns AREF : Auto Refresh
+# at time   1243732 ns PRE  : Bank = ALL
+# at time   1243812 ns AREF : Auto Refresh
+# at time   1243992 ns AREF : Auto Refresh
+# at time   1244172 ns AREF : Auto Refresh
+# at time   1244352 ns AREF : Auto Refresh
+# at time   1244532 ns AREF : Auto Refresh
+# at time   1244712 ns AREF : Auto Refresh
+# at time   1274572 ns PRE  : Bank = ALL
+# at time   1274652 ns AREF : Auto Refresh
+# at time   1274832 ns AREF : Auto Refresh
+# at time   1275012 ns AREF : Auto Refresh
+# at time   1275192 ns AREF : Auto Refresh
+# at time   1275372 ns AREF : Auto Refresh
+# at time   1275552 ns AREF : Auto Refresh
+# at time   1305412 ns PRE  : Bank = ALL
+# at time   1305492 ns AREF : Auto Refresh
+# at time   1305672 ns AREF : Auto Refresh
+# at time   1305852 ns AREF : Auto Refresh
+# at time   1306032 ns AREF : Auto Refresh
+# at time   1306212 ns AREF : Auto Refresh
+# at time   1306392 ns AREF : Auto Refresh
+# at time   1336252 ns PRE  : Bank = ALL
+# at time   1336332 ns AREF : Auto Refresh
+# at time   1336512 ns AREF : Auto Refresh
+# at time   1336692 ns AREF : Auto Refresh
+# at time   1336872 ns AREF : Auto Refresh
+# at time   1337052 ns AREF : Auto Refresh
+# at time   1337232 ns AREF : Auto Refresh
+# at time   1367092 ns PRE  : Bank = ALL
+# at time   1367172 ns AREF : Auto Refresh
+# at time   1367352 ns AREF : Auto Refresh
+# at time   1367532 ns AREF : Auto Refresh
+# at time   1367712 ns AREF : Auto Refresh
+# at time   1367892 ns AREF : Auto Refresh
+# at time   1368072 ns AREF : Auto Refresh
+# at time   1397932 ns PRE  : Bank = ALL
+# at time   1398012 ns AREF : Auto Refresh
+# at time   1398192 ns AREF : Auto Refresh
+# at time   1398372 ns AREF : Auto Refresh
+# at time   1398552 ns AREF : Auto Refresh
+# at time   1398732 ns AREF : Auto Refresh
+# at time   1398912 ns AREF : Auto Refresh
+# at time   1428772 ns PRE  : Bank = ALL
+# at time   1428852 ns AREF : Auto Refresh
+# at time   1429032 ns AREF : Auto Refresh
+# at time   1429212 ns AREF : Auto Refresh
+# at time   1429392 ns AREF : Auto Refresh
+# at time   1429572 ns AREF : Auto Refresh
+# at time   1429752 ns AREF : Auto Refresh
+# at time   1459612 ns PRE  : Bank = ALL
+# at time   1459692 ns AREF : Auto Refresh
+# at time   1459872 ns AREF : Auto Refresh
+# at time   1460052 ns AREF : Auto Refresh
+# at time   1460232 ns AREF : Auto Refresh
+# at time   1460412 ns AREF : Auto Refresh
+# at time   1460592 ns AREF : Auto Refresh
+# at time   1490452 ns PRE  : Bank = ALL
+# at time   1490532 ns AREF : Auto Refresh
+# at time   1490712 ns AREF : Auto Refresh
+# at time   1490892 ns AREF : Auto Refresh
+# at time   1491072 ns AREF : Auto Refresh
+# at time   1491252 ns AREF : Auto Refresh
+# at time   1491432 ns AREF : Auto Refresh
+# at time   1521292 ns PRE  : Bank = ALL
+# at time   1521372 ns AREF : Auto Refresh
+# at time   1521552 ns AREF : Auto Refresh
+# at time   1521732 ns AREF : Auto Refresh
+# at time   1521912 ns AREF : Auto Refresh
+# at time   1522092 ns AREF : Auto Refresh
+# at time   1522272 ns AREF : Auto Refresh
+# at time   1552132 ns PRE  : Bank = ALL
+# at time   1552212 ns AREF : Auto Refresh
+# at time   1552392 ns AREF : Auto Refresh
+# at time   1552572 ns AREF : Auto Refresh
+# at time   1552752 ns AREF : Auto Refresh
+# at time   1552932 ns AREF : Auto Refresh
+# at time   1553112 ns AREF : Auto Refresh
+# at time   1582972 ns PRE  : Bank = ALL
+# at time   1583052 ns AREF : Auto Refresh
+# at time   1583232 ns AREF : Auto Refresh
+# at time   1583412 ns AREF : Auto Refresh
+# at time   1583592 ns AREF : Auto Refresh
+# at time   1583772 ns AREF : Auto Refresh
+# at time   1583952 ns AREF : Auto Refresh
+# at time   1613812 ns PRE  : Bank = ALL
+# at time   1613892 ns AREF : Auto Refresh
+# at time   1614072 ns AREF : Auto Refresh
+# at time   1614252 ns AREF : Auto Refresh
+# at time   1614432 ns AREF : Auto Refresh
+# at time   1614612 ns AREF : Auto Refresh
+# at time   1614792 ns AREF : Auto Refresh
+# at time   1644652 ns PRE  : Bank = ALL
+# at time   1644732 ns AREF : Auto Refresh
+# at time   1644912 ns AREF : Auto Refresh
+# at time   1645092 ns AREF : Auto Refresh
+# at time   1645272 ns AREF : Auto Refresh
+# at time   1645452 ns AREF : Auto Refresh
+# at time   1645632 ns AREF : Auto Refresh
+# at time   1675492 ns PRE  : Bank = ALL
+# at time   1675572 ns AREF : Auto Refresh
+# at time   1675752 ns AREF : Auto Refresh
+# at time   1675932 ns AREF : Auto Refresh
+# at time   1676112 ns AREF : Auto Refresh
+# at time   1676292 ns AREF : Auto Refresh
+# at time   1676472 ns AREF : Auto Refresh
+# at time   1706332 ns PRE  : Bank = ALL
+# at time   1706412 ns AREF : Auto Refresh
+# at time   1706592 ns AREF : Auto Refresh
+# at time   1706772 ns AREF : Auto Refresh
+# at time   1706952 ns AREF : Auto Refresh
+# at time   1707132 ns AREF : Auto Refresh
+# at time   1707312 ns AREF : Auto Refresh
+# at time   1737172 ns PRE  : Bank = ALL
+# at time   1737252 ns AREF : Auto Refresh
+# at time   1737432 ns AREF : Auto Refresh
+# at time   1737612 ns AREF : Auto Refresh
+# at time   1737792 ns AREF : Auto Refresh
+# at time   1737972 ns AREF : Auto Refresh
+# at time   1738152 ns AREF : Auto Refresh
+# at time   1768012 ns PRE  : Bank = ALL
+# at time   1768092 ns AREF : Auto Refresh
+# at time   1768272 ns AREF : Auto Refresh
+# at time   1768452 ns AREF : Auto Refresh
+# at time   1768632 ns AREF : Auto Refresh
+# at time   1768812 ns AREF : Auto Refresh
+# at time   1768992 ns AREF : Auto Refresh
+# at time   1798852 ns PRE  : Bank = ALL
+# at time   1798932 ns AREF : Auto Refresh
+# at time   1799112 ns AREF : Auto Refresh
+# at time   1799292 ns AREF : Auto Refresh
+# at time   1799472 ns AREF : Auto Refresh
+# at time   1799652 ns AREF : Auto Refresh
+# at time   1799832 ns AREF : Auto Refresh
+# at time   1829692 ns PRE  : Bank = ALL
+# at time   1829772 ns AREF : Auto Refresh
+# at time   1829952 ns AREF : Auto Refresh
+# at time   1830132 ns AREF : Auto Refresh
+# at time   1830312 ns AREF : Auto Refresh
+# at time   1830492 ns AREF : Auto Refresh
+# at time   1830672 ns AREF : Auto Refresh
+# at time   1860532 ns PRE  : Bank = ALL
+# at time   1860612 ns AREF : Auto Refresh
+# at time   1860792 ns AREF : Auto Refresh
+# at time   1860972 ns AREF : Auto Refresh
+# at time   1861152 ns AREF : Auto Refresh
+# at time   1861332 ns AREF : Auto Refresh
+# at time   1861512 ns AREF : Auto Refresh
+# at time   1891372 ns PRE  : Bank = ALL
+# at time   1891452 ns AREF : Auto Refresh
+# at time   1891632 ns AREF : Auto Refresh
+# at time   1891812 ns AREF : Auto Refresh
+# at time   1891992 ns AREF : Auto Refresh
+# at time   1892172 ns AREF : Auto Refresh
+# at time   1892352 ns AREF : Auto Refresh
+# at time   1922212 ns PRE  : Bank = ALL
+# at time   1922292 ns AREF : Auto Refresh
+# at time   1922472 ns AREF : Auto Refresh
+# at time   1922652 ns AREF : Auto Refresh
+# at time   1922832 ns AREF : Auto Refresh
+# at time   1923012 ns AREF : Auto Refresh
+# at time   1923192 ns AREF : Auto Refresh
+# at time   1953052 ns PRE  : Bank = ALL
+# at time   1953132 ns AREF : Auto Refresh
+# at time   1953312 ns AREF : Auto Refresh
+# at time   1953492 ns AREF : Auto Refresh
+# at time   1953672 ns AREF : Auto Refresh
+# at time   1953852 ns AREF : Auto Refresh
+# at time   1954032 ns AREF : Auto Refresh
+# at time   1983892 ns PRE  : Bank = ALL
+# at time   1983972 ns AREF : Auto Refresh
+# at time   1984152 ns AREF : Auto Refresh
+# at time   1984332 ns AREF : Auto Refresh
+# at time   1984512 ns AREF : Auto Refresh
+# at time   1984692 ns AREF : Auto Refresh
+# at time   1984872 ns AREF : Auto Refresh
+# at time   2014732 ns PRE  : Bank = ALL
+# at time   2014812 ns AREF : Auto Refresh
+# at time   2014992 ns AREF : Auto Refresh
+# at time   2015172 ns AREF : Auto Refresh
+# at time   2015352 ns AREF : Auto Refresh
+# at time   2015532 ns AREF : Auto Refresh
+# at time   2015712 ns AREF : Auto Refresh
+# at time   2045572 ns PRE  : Bank = ALL
+# at time   2045652 ns AREF : Auto Refresh
+# at time   2045832 ns AREF : Auto Refresh
+# at time   2046012 ns AREF : Auto Refresh
+# at time   2046192 ns AREF : Auto Refresh
+# at time   2046372 ns AREF : Auto Refresh
+# at time   2046552 ns AREF : Auto Refresh
+# at time   2076412 ns PRE  : Bank = ALL
+# at time   2076492 ns AREF : Auto Refresh
+# at time   2076672 ns AREF : Auto Refresh
+# at time   2076852 ns AREF : Auto Refresh
+# at time   2077032 ns AREF : Auto Refresh
+# at time   2077212 ns AREF : Auto Refresh
+# at time   2077392 ns AREF : Auto Refresh
+# at time   2107252 ns PRE  : Bank = ALL
+# at time   2107332 ns AREF : Auto Refresh
+# at time   2107512 ns AREF : Auto Refresh
+# at time   2107692 ns AREF : Auto Refresh
+# at time   2107872 ns AREF : Auto Refresh
+# at time   2108052 ns AREF : Auto Refresh
+# at time   2108232 ns AREF : Auto Refresh
+# at time   2138092 ns PRE  : Bank = ALL
+# at time   2138172 ns AREF : Auto Refresh
+# at time   2138352 ns AREF : Auto Refresh
+# at time   2138532 ns AREF : Auto Refresh
+# at time   2138712 ns AREF : Auto Refresh
+# at time   2138892 ns AREF : Auto Refresh
+# at time   2139072 ns AREF : Auto Refresh
+# at time   2168932 ns PRE  : Bank = ALL
+# at time   2169012 ns AREF : Auto Refresh
+# at time   2169192 ns AREF : Auto Refresh
+# at time   2169372 ns AREF : Auto Refresh
+# at time   2169552 ns AREF : Auto Refresh
+# at time   2169732 ns AREF : Auto Refresh
+# at time   2169912 ns AREF : Auto Refresh
+# at time   2199772 ns PRE  : Bank = ALL
+# at time   2199852 ns AREF : Auto Refresh
+# at time   2200032 ns AREF : Auto Refresh
+# at time   2200212 ns AREF : Auto Refresh
+# at time   2200392 ns AREF : Auto Refresh
+# at time   2200572 ns AREF : Auto Refresh
+# at time   2200752 ns AREF : Auto Refresh
+# at time   2230612 ns PRE  : Bank = ALL
+# at time   2230692 ns AREF : Auto Refresh
+# at time   2230872 ns AREF : Auto Refresh
+# at time   2231052 ns AREF : Auto Refresh
+# at time   2231232 ns AREF : Auto Refresh
+# at time   2231412 ns AREF : Auto Refresh
+# at time   2231592 ns AREF : Auto Refresh
+# at time   2261452 ns PRE  : Bank = ALL
+# at time   2261532 ns AREF : Auto Refresh
+# at time   2261712 ns AREF : Auto Refresh
+# at time   2261892 ns AREF : Auto Refresh
+# at time   2262072 ns AREF : Auto Refresh
+# at time   2262252 ns AREF : Auto Refresh
+# at time   2262432 ns AREF : Auto Refresh
+# at time   2292292 ns PRE  : Bank = ALL
+# at time   2292372 ns AREF : Auto Refresh
+# at time   2292552 ns AREF : Auto Refresh
+# at time   2292732 ns AREF : Auto Refresh
+# at time   2292912 ns AREF : Auto Refresh
+# at time   2293092 ns AREF : Auto Refresh
+# at time   2293272 ns AREF : Auto Refresh
+# at time   2323132 ns PRE  : Bank = ALL
+# at time   2323212 ns AREF : Auto Refresh
+# at time   2323392 ns AREF : Auto Refresh
+# at time   2323572 ns AREF : Auto Refresh
+# at time   2323752 ns AREF : Auto Refresh
+# at time   2323932 ns AREF : Auto Refresh
+# at time   2324112 ns AREF : Auto Refresh
+# at time   2353972 ns PRE  : Bank = ALL
+# at time   2354052 ns AREF : Auto Refresh
+# at time   2354232 ns AREF : Auto Refresh
+# at time   2354412 ns AREF : Auto Refresh
+# at time   2354592 ns AREF : Auto Refresh
+# at time   2354772 ns AREF : Auto Refresh
+# at time   2354952 ns AREF : Auto Refresh
+# at time   2384812 ns PRE  : Bank = ALL
+# at time   2384892 ns AREF : Auto Refresh
+# at time   2385072 ns AREF : Auto Refresh
+# at time   2385252 ns AREF : Auto Refresh
+# at time   2385432 ns AREF : Auto Refresh
+# at time   2385612 ns AREF : Auto Refresh
+# at time   2385792 ns AREF : Auto Refresh
+# at time   2415652 ns PRE  : Bank = ALL
+# at time   2415732 ns AREF : Auto Refresh
+# at time   2415912 ns AREF : Auto Refresh
+# at time   2416092 ns AREF : Auto Refresh
+# at time   2416272 ns AREF : Auto Refresh
+# at time   2416452 ns AREF : Auto Refresh
+# at time   2416632 ns AREF : Auto Refresh
+# at time   2446492 ns PRE  : Bank = ALL
+# at time   2446572 ns AREF : Auto Refresh
+# at time   2446752 ns AREF : Auto Refresh
+# at time   2446932 ns AREF : Auto Refresh
+# at time   2447112 ns AREF : Auto Refresh
+# at time   2447292 ns AREF : Auto Refresh
+# at time   2447472 ns AREF : Auto Refresh
+# at time   2477332 ns PRE  : Bank = ALL
+# at time   2477412 ns AREF : Auto Refresh
+# at time   2477592 ns AREF : Auto Refresh
+# at time   2477772 ns AREF : Auto Refresh
+# at time   2477952 ns AREF : Auto Refresh
+# at time   2478132 ns AREF : Auto Refresh
+# at time   2478312 ns AREF : Auto Refresh
+# at time   2508172 ns PRE  : Bank = ALL
+# at time   2508252 ns AREF : Auto Refresh
+# at time   2508432 ns AREF : Auto Refresh
+# at time   2508612 ns AREF : Auto Refresh
+# at time   2508792 ns AREF : Auto Refresh
+# at time   2508972 ns AREF : Auto Refresh
+# at time   2509152 ns AREF : Auto Refresh
+# at time   2539012 ns PRE  : Bank = ALL
+# at time   2539092 ns AREF : Auto Refresh
+# at time   2539272 ns AREF : Auto Refresh
+# at time   2539452 ns AREF : Auto Refresh
+# at time   2539632 ns AREF : Auto Refresh
+# at time   2539812 ns AREF : Auto Refresh
+# at time   2539992 ns AREF : Auto Refresh
+# at time   2569852 ns PRE  : Bank = ALL
+# at time   2569932 ns AREF : Auto Refresh
+# at time   2570112 ns AREF : Auto Refresh
+# at time   2570292 ns AREF : Auto Refresh
+# at time   2570472 ns AREF : Auto Refresh
+# at time   2570652 ns AREF : Auto Refresh
+# at time   2570832 ns AREF : Auto Refresh
+# at time   2600692 ns PRE  : Bank = ALL
+# at time   2600772 ns AREF : Auto Refresh
+# at time   2600952 ns AREF : Auto Refresh
+# at time   2601132 ns AREF : Auto Refresh
+# at time   2601312 ns AREF : Auto Refresh
+# at time   2601492 ns AREF : Auto Refresh
+# at time   2601672 ns AREF : Auto Refresh
+# at time   2631532 ns PRE  : Bank = ALL
+# at time   2631612 ns AREF : Auto Refresh
+# at time   2631792 ns AREF : Auto Refresh
+# at time   2631972 ns AREF : Auto Refresh
+# at time   2632152 ns AREF : Auto Refresh
+# at time   2632332 ns AREF : Auto Refresh
+# at time   2632512 ns AREF : Auto Refresh
+# at time   2662372 ns PRE  : Bank = ALL
+# at time   2662452 ns AREF : Auto Refresh
+# at time   2662632 ns AREF : Auto Refresh
+# at time   2662812 ns AREF : Auto Refresh
+# at time   2662992 ns AREF : Auto Refresh
+# at time   2663172 ns AREF : Auto Refresh
+# at time   2663352 ns AREF : Auto Refresh
+# at time   2693212 ns PRE  : Bank = ALL
+# at time   2693292 ns AREF : Auto Refresh
+# at time   2693472 ns AREF : Auto Refresh
+# at time   2693652 ns AREF : Auto Refresh
+# at time   2693832 ns AREF : Auto Refresh
+# at time   2694012 ns AREF : Auto Refresh
+# at time   2694192 ns AREF : Auto Refresh
+# at time   2724052 ns PRE  : Bank = ALL
+# at time   2724132 ns AREF : Auto Refresh
+# at time   2724312 ns AREF : Auto Refresh
+# at time   2724492 ns AREF : Auto Refresh
+# at time   2724672 ns AREF : Auto Refresh
+# at time   2724852 ns AREF : Auto Refresh
+# at time   2725032 ns AREF : Auto Refresh
+# at time   2754892 ns PRE  : Bank = ALL
+# at time   2754972 ns AREF : Auto Refresh
+# at time   2755152 ns AREF : Auto Refresh
+# at time   2755332 ns AREF : Auto Refresh
+# at time   2755512 ns AREF : Auto Refresh
+# at time   2755692 ns AREF : Auto Refresh
+# at time   2755872 ns AREF : Auto Refresh
+# at time   2785732 ns PRE  : Bank = ALL
+# at time   2785812 ns AREF : Auto Refresh
+# at time   2785992 ns AREF : Auto Refresh
+# at time   2786172 ns AREF : Auto Refresh
+# at time   2786352 ns AREF : Auto Refresh
+# at time   2786532 ns AREF : Auto Refresh
+# at time   2786712 ns AREF : Auto Refresh
+# at time   2816572 ns PRE  : Bank = ALL
+# at time   2816652 ns AREF : Auto Refresh
+# at time   2816832 ns AREF : Auto Refresh
+# at time   2817012 ns AREF : Auto Refresh
+# at time   2817192 ns AREF : Auto Refresh
+# at time   2817372 ns AREF : Auto Refresh
+# at time   2817552 ns AREF : Auto Refresh
+# at time   2847412 ns PRE  : Bank = ALL
+# at time   2847492 ns AREF : Auto Refresh
+# at time   2847672 ns AREF : Auto Refresh
+# at time   2847852 ns AREF : Auto Refresh
+# at time   2848032 ns AREF : Auto Refresh
+# at time   2848212 ns AREF : Auto Refresh
+# at time   2848392 ns AREF : Auto Refresh
+# at time   2878252 ns PRE  : Bank = ALL
+# at time   2878332 ns AREF : Auto Refresh
+# at time   2878512 ns AREF : Auto Refresh
+# at time   2878692 ns AREF : Auto Refresh
+# at time   2878872 ns AREF : Auto Refresh
+# at time   2879052 ns AREF : Auto Refresh
+# at time   2879232 ns AREF : Auto Refresh
+# at time   2909092 ns PRE  : Bank = ALL
+# at time   2909172 ns AREF : Auto Refresh
+# at time   2909352 ns AREF : Auto Refresh
+# at time   2909532 ns AREF : Auto Refresh
+# at time   2909712 ns AREF : Auto Refresh
+# at time   2909892 ns AREF : Auto Refresh
+# at time   2910072 ns AREF : Auto Refresh
+# at time   2939932 ns PRE  : Bank = ALL
+# at time   2940012 ns AREF : Auto Refresh
+# at time   2940192 ns AREF : Auto Refresh
+# at time   2940372 ns AREF : Auto Refresh
+# at time   2940552 ns AREF : Auto Refresh
+# at time   2940732 ns AREF : Auto Refresh
+# at time   2940912 ns AREF : Auto Refresh
+# at time   2970772 ns PRE  : Bank = ALL
+# at time   2970852 ns AREF : Auto Refresh
+# at time   2971032 ns AREF : Auto Refresh
+# at time   2971212 ns AREF : Auto Refresh
+# at time   2971392 ns AREF : Auto Refresh
+# at time   2971572 ns AREF : Auto Refresh
+# at time   2971752 ns AREF : Auto Refresh
+# at time   3001612 ns PRE  : Bank = ALL
+# at time   3001692 ns AREF : Auto Refresh
+# at time   3001872 ns AREF : Auto Refresh
+# at time   3002052 ns AREF : Auto Refresh
+# at time   3002232 ns AREF : Auto Refresh
+# at time   3002412 ns AREF : Auto Refresh
+# at time   3002592 ns AREF : Auto Refresh
+# at time   3032452 ns PRE  : Bank = ALL
+# at time   3032532 ns AREF : Auto Refresh
+# at time   3032712 ns AREF : Auto Refresh
+# at time   3032892 ns AREF : Auto Refresh
+# at time   3033072 ns AREF : Auto Refresh
+# at time   3033252 ns AREF : Auto Refresh
+# at time   3033432 ns AREF : Auto Refresh
+# at time   3063292 ns PRE  : Bank = ALL
+# at time   3063372 ns AREF : Auto Refresh
+# at time   3063552 ns AREF : Auto Refresh
+# at time   3063732 ns AREF : Auto Refresh
+# at time   3063912 ns AREF : Auto Refresh
+# at time   3064092 ns AREF : Auto Refresh
+# at time   3064272 ns AREF : Auto Refresh
+# at time   3094132 ns PRE  : Bank = ALL
+# at time   3094212 ns AREF : Auto Refresh
+# at time   3094392 ns AREF : Auto Refresh
+# at time   3094572 ns AREF : Auto Refresh
+# at time   3094752 ns AREF : Auto Refresh
+# at time   3094932 ns AREF : Auto Refresh
+# at time   3095112 ns AREF : Auto Refresh
+# at time   3124972 ns PRE  : Bank = ALL
+# at time   3125052 ns AREF : Auto Refresh
+# at time   3125232 ns AREF : Auto Refresh
+# at time   3125412 ns AREF : Auto Refresh
+# at time   3125592 ns AREF : Auto Refresh
+# at time   3125772 ns AREF : Auto Refresh
+# at time   3125952 ns AREF : Auto Refresh
+# at time   3155812 ns PRE  : Bank = ALL
+# at time   3155892 ns AREF : Auto Refresh
+# at time   3156072 ns AREF : Auto Refresh
+# at time   3156252 ns AREF : Auto Refresh
+# at time   3156432 ns AREF : Auto Refresh
+# at time   3156612 ns AREF : Auto Refresh
+# at time   3156792 ns AREF : Auto Refresh
+# at time   3186652 ns PRE  : Bank = ALL
+# at time   3186732 ns AREF : Auto Refresh
+# at time   3186912 ns AREF : Auto Refresh
+# at time   3187092 ns AREF : Auto Refresh
+# at time   3187272 ns AREF : Auto Refresh
+# at time   3187452 ns AREF : Auto Refresh
+# at time   3187632 ns AREF : Auto Refresh
+# at time   3217492 ns PRE  : Bank = ALL
+# at time   3217572 ns AREF : Auto Refresh
+# at time   3217752 ns AREF : Auto Refresh
+# at time   3217932 ns AREF : Auto Refresh
+# at time   3218112 ns AREF : Auto Refresh
+# at time   3218292 ns AREF : Auto Refresh
+# at time   3218472 ns AREF : Auto Refresh
+# at time   3248332 ns PRE  : Bank = ALL
+# at time   3248412 ns AREF : Auto Refresh
+# at time   3248592 ns AREF : Auto Refresh
+# at time   3248772 ns AREF : Auto Refresh
+# at time   3248952 ns AREF : Auto Refresh
+# at time   3249132 ns AREF : Auto Refresh
+# at time   3249312 ns AREF : Auto Refresh
+# at time   3279172 ns PRE  : Bank = ALL
+# at time   3279252 ns AREF : Auto Refresh
+# at time   3279432 ns AREF : Auto Refresh
+# at time   3279612 ns AREF : Auto Refresh
+# at time   3279792 ns AREF : Auto Refresh
+# at time   3279972 ns AREF : Auto Refresh
+# at time   3280152 ns AREF : Auto Refresh
+# at time   3310012 ns PRE  : Bank = ALL
+# at time   3310092 ns AREF : Auto Refresh
+# at time   3310272 ns AREF : Auto Refresh
+# at time   3310452 ns AREF : Auto Refresh
+# at time   3310632 ns AREF : Auto Refresh
+# at time   3310812 ns AREF : Auto Refresh
+# at time   3310992 ns AREF : Auto Refresh
+# at time   3340852 ns PRE  : Bank = ALL
+# at time   3340932 ns AREF : Auto Refresh
+# at time   3341112 ns AREF : Auto Refresh
+# at time   3341292 ns AREF : Auto Refresh
+# at time   3341472 ns AREF : Auto Refresh
+# at time   3341652 ns AREF : Auto Refresh
+# at time   3341832 ns AREF : Auto Refresh
+# at time   3371692 ns PRE  : Bank = ALL
+# at time   3371772 ns AREF : Auto Refresh
+# at time   3371952 ns AREF : Auto Refresh
+# at time   3372132 ns AREF : Auto Refresh
+# at time   3372312 ns AREF : Auto Refresh
+# at time   3372492 ns AREF : Auto Refresh
+# at time   3372672 ns AREF : Auto Refresh
+# at time   3402532 ns PRE  : Bank = ALL
+# at time   3402612 ns AREF : Auto Refresh
+# at time   3402792 ns AREF : Auto Refresh
+# at time   3402972 ns AREF : Auto Refresh
+# at time   3403152 ns AREF : Auto Refresh
+# at time   3403332 ns AREF : Auto Refresh
+# at time   3403512 ns AREF : Auto Refresh
+# at time   3433372 ns PRE  : Bank = ALL
+# at time   3433452 ns AREF : Auto Refresh
+# at time   3433632 ns AREF : Auto Refresh
+# at time   3433812 ns AREF : Auto Refresh
+# at time   3433992 ns AREF : Auto Refresh
+# at time   3434172 ns AREF : Auto Refresh
+# at time   3434352 ns AREF : Auto Refresh
+# at time   3464212 ns PRE  : Bank = ALL
+# at time   3464292 ns AREF : Auto Refresh
+# at time   3464472 ns AREF : Auto Refresh
+# at time   3464652 ns AREF : Auto Refresh
+# at time   3464832 ns AREF : Auto Refresh
+# at time   3465012 ns AREF : Auto Refresh
+# at time   3465192 ns AREF : Auto Refresh
+# at time   3495052 ns PRE  : Bank = ALL
+# at time   3495132 ns AREF : Auto Refresh
+# at time   3495312 ns AREF : Auto Refresh
+# at time   3495492 ns AREF : Auto Refresh
+# at time   3495672 ns AREF : Auto Refresh
+# at time   3495852 ns AREF : Auto Refresh
+# at time   3496032 ns AREF : Auto Refresh
+# at time   3525892 ns PRE  : Bank = ALL
+# at time   3525972 ns AREF : Auto Refresh
+# at time   3526152 ns AREF : Auto Refresh
+# at time   3526332 ns AREF : Auto Refresh
+# at time   3526512 ns AREF : Auto Refresh
+# at time   3526692 ns AREF : Auto Refresh
+# at time   3526872 ns AREF : Auto Refresh
+# at time   3556732 ns PRE  : Bank = ALL
+# at time   3556812 ns AREF : Auto Refresh
+# at time   3556992 ns AREF : Auto Refresh
+# at time   3557172 ns AREF : Auto Refresh
+# at time   3557352 ns AREF : Auto Refresh
+# at time   3557532 ns AREF : Auto Refresh
+# at time   3557712 ns AREF : Auto Refresh
+# at time   3587572 ns PRE  : Bank = ALL
+# at time   3587652 ns AREF : Auto Refresh
+# at time   3587832 ns AREF : Auto Refresh
+# at time   3588012 ns AREF : Auto Refresh
+# at time   3588192 ns AREF : Auto Refresh
+# at time   3588372 ns AREF : Auto Refresh
+# at time   3588552 ns AREF : Auto Refresh
+# at time   3618412 ns PRE  : Bank = ALL
+# at time   3618492 ns AREF : Auto Refresh
+# at time   3618672 ns AREF : Auto Refresh
+# at time   3618852 ns AREF : Auto Refresh
+# at time   3619032 ns AREF : Auto Refresh
+# at time   3619212 ns AREF : Auto Refresh
+# at time   3619392 ns AREF : Auto Refresh
+# at time   3649252 ns PRE  : Bank = ALL
+# at time   3649332 ns AREF : Auto Refresh
+# at time   3649512 ns AREF : Auto Refresh
+# at time   3649692 ns AREF : Auto Refresh
+# at time   3649872 ns AREF : Auto Refresh
+# at time   3650052 ns AREF : Auto Refresh
+# at time   3650232 ns AREF : Auto Refresh
+# at time   3680092 ns PRE  : Bank = ALL
+# at time   3680172 ns AREF : Auto Refresh
+# at time   3680352 ns AREF : Auto Refresh
+# at time   3680532 ns AREF : Auto Refresh
+# at time   3680712 ns AREF : Auto Refresh
+# at time   3680892 ns AREF : Auto Refresh
+# at time   3681072 ns AREF : Auto Refresh
+# at time   3710932 ns PRE  : Bank = ALL
+# at time   3711012 ns AREF : Auto Refresh
+# at time   3711192 ns AREF : Auto Refresh
+# at time   3711372 ns AREF : Auto Refresh
+# at time   3711552 ns AREF : Auto Refresh
+# at time   3711732 ns AREF : Auto Refresh
+# at time   3711912 ns AREF : Auto Refresh
+# at time   3741772 ns PRE  : Bank = ALL
+# at time   3741852 ns AREF : Auto Refresh
+# at time   3742032 ns AREF : Auto Refresh
+# at time   3742212 ns AREF : Auto Refresh
+# at time   3742392 ns AREF : Auto Refresh
+# at time   3742572 ns AREF : Auto Refresh
+# at time   3742752 ns AREF : Auto Refresh
+# at time   3772612 ns PRE  : Bank = ALL
+# at time   3772692 ns AREF : Auto Refresh
+# at time   3772872 ns AREF : Auto Refresh
+# at time   3773052 ns AREF : Auto Refresh
+# at time   3773232 ns AREF : Auto Refresh
+# at time   3773412 ns AREF : Auto Refresh
+# at time   3773592 ns AREF : Auto Refresh
+# at time   3803452 ns PRE  : Bank = ALL
+# at time   3803532 ns AREF : Auto Refresh
+# at time   3803712 ns AREF : Auto Refresh
+# at time   3803892 ns AREF : Auto Refresh
+# at time   3804072 ns AREF : Auto Refresh
+# at time   3804252 ns AREF : Auto Refresh
+# at time   3804432 ns AREF : Auto Refresh
+# at time   3834292 ns PRE  : Bank = ALL
+# at time   3834372 ns AREF : Auto Refresh
+# at time   3834552 ns AREF : Auto Refresh
+# at time   3834732 ns AREF : Auto Refresh
+# at time   3834912 ns AREF : Auto Refresh
+# at time   3835092 ns AREF : Auto Refresh
+# at time   3835272 ns AREF : Auto Refresh
+# at time   3865132 ns PRE  : Bank = ALL
+# at time   3865212 ns AREF : Auto Refresh
+# at time   3865392 ns AREF : Auto Refresh
+# at time   3865572 ns AREF : Auto Refresh
+# at time   3865752 ns AREF : Auto Refresh
+# at time   3865932 ns AREF : Auto Refresh
+# at time   3866112 ns AREF : Auto Refresh
+# at time   3895972 ns PRE  : Bank = ALL
+# at time   3896052 ns AREF : Auto Refresh
+# at time   3896232 ns AREF : Auto Refresh
+# at time   3896412 ns AREF : Auto Refresh
+# at time   3896592 ns AREF : Auto Refresh
+# at time   3896772 ns AREF : Auto Refresh
+# at time   3896952 ns AREF : Auto Refresh
+# at time   3926812 ns PRE  : Bank = ALL
+# at time   3926892 ns AREF : Auto Refresh
+# at time   3927072 ns AREF : Auto Refresh
+# at time   3927252 ns AREF : Auto Refresh
+# at time   3927432 ns AREF : Auto Refresh
+# at time   3927612 ns AREF : Auto Refresh
+# at time   3927792 ns AREF : Auto Refresh
+# at time   3957652 ns PRE  : Bank = ALL
+# at time   3957732 ns AREF : Auto Refresh
+# at time   3957912 ns AREF : Auto Refresh
+# at time   3958092 ns AREF : Auto Refresh
+# at time   3958272 ns AREF : Auto Refresh
+# at time   3958452 ns AREF : Auto Refresh
+# at time   3958632 ns AREF : Auto Refresh
+# at time   3988492 ns PRE  : Bank = ALL
+# at time   3988572 ns AREF : Auto Refresh
+# at time   3988752 ns AREF : Auto Refresh
+# at time   3988932 ns AREF : Auto Refresh
+# at time   3989112 ns AREF : Auto Refresh
+# at time   3989292 ns AREF : Auto Refresh
+# at time   3989472 ns AREF : Auto Refresh
+# at time   4019332 ns PRE  : Bank = ALL
+# at time   4019412 ns AREF : Auto Refresh
+# at time   4019592 ns AREF : Auto Refresh
+# at time   4019772 ns AREF : Auto Refresh
+# at time   4019952 ns AREF : Auto Refresh
+# at time   4020132 ns AREF : Auto Refresh
+# at time   4020312 ns AREF : Auto Refresh
+# at time   4050172 ns PRE  : Bank = ALL
+# at time   4050252 ns AREF : Auto Refresh
+# at time   4050432 ns AREF : Auto Refresh
+# at time   4050612 ns AREF : Auto Refresh
+# at time   4050792 ns AREF : Auto Refresh
+# at time   4050972 ns AREF : Auto Refresh
+# at time   4051152 ns AREF : Auto Refresh
+# at time   4081012 ns PRE  : Bank = ALL
+# at time   4081092 ns AREF : Auto Refresh
+# at time   4081272 ns AREF : Auto Refresh
+# at time   4081452 ns AREF : Auto Refresh
+# at time   4081632 ns AREF : Auto Refresh
+# at time   4081812 ns AREF : Auto Refresh
+# at time   4081992 ns AREF : Auto Refresh
+# at time   4111852 ns PRE  : Bank = ALL
+# at time   4111932 ns AREF : Auto Refresh
+# at time   4112112 ns AREF : Auto Refresh
+# at time   4112292 ns AREF : Auto Refresh
+# at time   4112472 ns AREF : Auto Refresh
+# at time   4112652 ns AREF : Auto Refresh
+# at time   4112832 ns AREF : Auto Refresh
+# at time   4142692 ns PRE  : Bank = ALL
+# at time   4142772 ns AREF : Auto Refresh
+# at time   4142952 ns AREF : Auto Refresh
+# at time   4143132 ns AREF : Auto Refresh
+# at time   4143312 ns AREF : Auto Refresh
+# at time   4143492 ns AREF : Auto Refresh
+# at time   4143672 ns AREF : Auto Refresh
+# at time   4173532 ns PRE  : Bank = ALL
+# at time   4173612 ns AREF : Auto Refresh
+# at time   4173792 ns AREF : Auto Refresh
+# at time   4173972 ns AREF : Auto Refresh
+# at time   4174152 ns AREF : Auto Refresh
+# at time   4174332 ns AREF : Auto Refresh
+# at time   4174512 ns AREF : Auto Refresh
+# at time   4204372 ns PRE  : Bank = ALL
+# at time   4204452 ns AREF : Auto Refresh
+# at time   4204632 ns AREF : Auto Refresh
+# at time   4204812 ns AREF : Auto Refresh
+# at time   4204992 ns AREF : Auto Refresh
+# at time   4205172 ns AREF : Auto Refresh
+# at time   4205352 ns AREF : Auto Refresh
+# at time   4235212 ns PRE  : Bank = ALL
+# at time   4235292 ns AREF : Auto Refresh
+# at time   4235472 ns AREF : Auto Refresh
+# at time   4235652 ns AREF : Auto Refresh
+# at time   4235832 ns AREF : Auto Refresh
+# at time   4236012 ns AREF : Auto Refresh
+# at time   4236192 ns AREF : Auto Refresh
+# at time   4266052 ns PRE  : Bank = ALL
+# at time   4266132 ns AREF : Auto Refresh
+# at time   4266312 ns AREF : Auto Refresh
+# at time   4266492 ns AREF : Auto Refresh
+# at time   4266672 ns AREF : Auto Refresh
+# at time   4266852 ns AREF : Auto Refresh
+# at time   4267032 ns AREF : Auto Refresh
+# at time   4296892 ns PRE  : Bank = ALL
+# at time   4296972 ns AREF : Auto Refresh
+# at time   4297152 ns AREF : Auto Refresh
+# at time   4297332 ns AREF : Auto Refresh
+# at time   4297512 ns AREF : Auto Refresh
+# at time   4297692 ns AREF : Auto Refresh
+# at time   4297872 ns AREF : Auto Refresh
+# at time   4327732 ns PRE  : Bank = ALL
+# at time   4327812 ns AREF : Auto Refresh
+# at time   4327992 ns AREF : Auto Refresh
+# at time   4328172 ns AREF : Auto Refresh
+# at time   4328352 ns AREF : Auto Refresh
+# at time   4328532 ns AREF : Auto Refresh
+# at time   4328712 ns AREF : Auto Refresh
+# at time   4358572 ns PRE  : Bank = ALL
+# at time   4358652 ns AREF : Auto Refresh
+# at time   4358832 ns AREF : Auto Refresh
+# at time   4359012 ns AREF : Auto Refresh
+# at time   4359192 ns AREF : Auto Refresh
+# at time   4359372 ns AREF : Auto Refresh
+# at time   4359552 ns AREF : Auto Refresh
+# at time   4389412 ns PRE  : Bank = ALL
+# at time   4389492 ns AREF : Auto Refresh
+# at time   4389672 ns AREF : Auto Refresh
+# at time   4389852 ns AREF : Auto Refresh
+# at time   4390032 ns AREF : Auto Refresh
+# at time   4390212 ns AREF : Auto Refresh
+# at time   4390392 ns AREF : Auto Refresh
+# at time   4420252 ns PRE  : Bank = ALL
+# at time   4420332 ns AREF : Auto Refresh
+# at time   4420512 ns AREF : Auto Refresh
+# at time   4420692 ns AREF : Auto Refresh
+# at time   4420872 ns AREF : Auto Refresh
+# at time   4421052 ns AREF : Auto Refresh
+# at time   4421232 ns AREF : Auto Refresh
+# at time   4451092 ns PRE  : Bank = ALL
+# at time   4451172 ns AREF : Auto Refresh
+# at time   4451352 ns AREF : Auto Refresh
+# at time   4451532 ns AREF : Auto Refresh
+# at time   4451712 ns AREF : Auto Refresh
+# at time   4451892 ns AREF : Auto Refresh
+# at time   4452072 ns AREF : Auto Refresh
+# at time   4481932 ns PRE  : Bank = ALL
+# at time   4482012 ns AREF : Auto Refresh
+# at time   4482192 ns AREF : Auto Refresh
+# at time   4482372 ns AREF : Auto Refresh
+# at time   4482552 ns AREF : Auto Refresh
+# at time   4482732 ns AREF : Auto Refresh
+# at time   4482912 ns AREF : Auto Refresh
+# at time   4512772 ns PRE  : Bank = ALL
+# at time   4512852 ns AREF : Auto Refresh
+# at time   4513032 ns AREF : Auto Refresh
+# at time   4513212 ns AREF : Auto Refresh
+# at time   4513392 ns AREF : Auto Refresh
+# at time   4513572 ns AREF : Auto Refresh
+# at time   4513752 ns AREF : Auto Refresh
+# at time   4543612 ns PRE  : Bank = ALL
+# at time   4543692 ns AREF : Auto Refresh
+# at time   4543872 ns AREF : Auto Refresh
+# at time   4544052 ns AREF : Auto Refresh
+# at time   4544232 ns AREF : Auto Refresh
+# at time   4544412 ns AREF : Auto Refresh
+# at time   4544592 ns AREF : Auto Refresh
+# at time   4574452 ns PRE  : Bank = ALL
+# at time   4574532 ns AREF : Auto Refresh
+# at time   4574712 ns AREF : Auto Refresh
+# at time   4574892 ns AREF : Auto Refresh
+# at time   4575072 ns AREF : Auto Refresh
+# at time   4575252 ns AREF : Auto Refresh
+# at time   4575432 ns AREF : Auto Refresh
+# at time   4605292 ns PRE  : Bank = ALL
+# at time   4605372 ns AREF : Auto Refresh
+# at time   4605552 ns AREF : Auto Refresh
+# at time   4605732 ns AREF : Auto Refresh
+# at time   4605912 ns AREF : Auto Refresh
+# at time   4606092 ns AREF : Auto Refresh
+# at time   4606272 ns AREF : Auto Refresh
+# at time   4636132 ns PRE  : Bank = ALL
+# at time   4636212 ns AREF : Auto Refresh
+# at time   4636392 ns AREF : Auto Refresh
+# at time   4636572 ns AREF : Auto Refresh
+# at time   4636752 ns AREF : Auto Refresh
+# at time   4636932 ns AREF : Auto Refresh
+# at time   4637112 ns AREF : Auto Refresh
+# at time   4666972 ns PRE  : Bank = ALL
+# at time   4667052 ns AREF : Auto Refresh
+# at time   4667232 ns AREF : Auto Refresh
+# at time   4667412 ns AREF : Auto Refresh
+# at time   4667592 ns AREF : Auto Refresh
+# at time   4667772 ns AREF : Auto Refresh
+# at time   4667952 ns AREF : Auto Refresh
+# at time   4697812 ns PRE  : Bank = ALL
+# at time   4697892 ns AREF : Auto Refresh
+# at time   4698072 ns AREF : Auto Refresh
+# at time   4698252 ns AREF : Auto Refresh
+# at time   4698432 ns AREF : Auto Refresh
+# at time   4698612 ns AREF : Auto Refresh
+# at time   4698792 ns AREF : Auto Refresh
+# at time   4728652 ns PRE  : Bank = ALL
+# at time   4728732 ns AREF : Auto Refresh
+# at time   4728912 ns AREF : Auto Refresh
+# at time   4729092 ns AREF : Auto Refresh
+# at time   4729272 ns AREF : Auto Refresh
+# at time   4729452 ns AREF : Auto Refresh
+# at time   4729632 ns AREF : Auto Refresh
+# at time   4759492 ns PRE  : Bank = ALL
+# at time   4759572 ns AREF : Auto Refresh
+# at time   4759752 ns AREF : Auto Refresh
+# at time   4759932 ns AREF : Auto Refresh
+# at time   4760112 ns AREF : Auto Refresh
+# at time   4760292 ns AREF : Auto Refresh
+# at time   4760472 ns AREF : Auto Refresh
+# at time   4790332 ns PRE  : Bank = ALL
+# at time   4790412 ns AREF : Auto Refresh
+# at time   4790592 ns AREF : Auto Refresh
+# at time   4790772 ns AREF : Auto Refresh
+# at time   4790952 ns AREF : Auto Refresh
+# at time   4791132 ns AREF : Auto Refresh
+# at time   4791312 ns AREF : Auto Refresh
+# at time   4821172 ns PRE  : Bank = ALL
+# at time   4821252 ns AREF : Auto Refresh
+# at time   4821432 ns AREF : Auto Refresh
+# at time   4821612 ns AREF : Auto Refresh
+# at time   4821792 ns AREF : Auto Refresh
+# at time   4821972 ns AREF : Auto Refresh
+# at time   4822152 ns AREF : Auto Refresh
+# at time   4852012 ns PRE  : Bank = ALL
+# at time   4852092 ns AREF : Auto Refresh
+# at time   4852272 ns AREF : Auto Refresh
+# at time   4852452 ns AREF : Auto Refresh
+# at time   4852632 ns AREF : Auto Refresh
+# at time   4852812 ns AREF : Auto Refresh
+# at time   4852992 ns AREF : Auto Refresh
+# at time   4882852 ns PRE  : Bank = ALL
+# at time   4882932 ns AREF : Auto Refresh
+# at time   4883112 ns AREF : Auto Refresh
+# at time   4883292 ns AREF : Auto Refresh
+# at time   4883472 ns AREF : Auto Refresh
+# at time   4883652 ns AREF : Auto Refresh
+# at time   4883832 ns AREF : Auto Refresh
+# at time   4913692 ns PRE  : Bank = ALL
+# at time   4913772 ns AREF : Auto Refresh
+# at time   4913952 ns AREF : Auto Refresh
+# at time   4914132 ns AREF : Auto Refresh
+# at time   4914312 ns AREF : Auto Refresh
+# at time   4914492 ns AREF : Auto Refresh
+# at time   4914672 ns AREF : Auto Refresh
+# at time   4944532 ns PRE  : Bank = ALL
+# at time   4944612 ns AREF : Auto Refresh
+# at time   4944792 ns AREF : Auto Refresh
+# at time   4944972 ns AREF : Auto Refresh
+# at time   4945152 ns AREF : Auto Refresh
+# at time   4945332 ns AREF : Auto Refresh
+# at time   4945512 ns AREF : Auto Refresh
+# at time   4975372 ns PRE  : Bank = ALL
+# at time   4975452 ns AREF : Auto Refresh
+# at time   4975632 ns AREF : Auto Refresh
+# at time   4975812 ns AREF : Auto Refresh
+# at time   4975992 ns AREF : Auto Refresh
+# at time   4976172 ns AREF : Auto Refresh
+# at time   4976352 ns AREF : Auto Refresh
+# at time   5006212 ns PRE  : Bank = ALL
+# at time   5006292 ns AREF : Auto Refresh
+# at time   5006472 ns AREF : Auto Refresh
+# at time   5006652 ns AREF : Auto Refresh
+# at time   5006832 ns AREF : Auto Refresh
+# at time   5007012 ns AREF : Auto Refresh
+# at time   5007192 ns AREF : Auto Refresh
+# at time   5037052 ns PRE  : Bank = ALL
+# at time   5037132 ns AREF : Auto Refresh
+# at time   5037312 ns AREF : Auto Refresh
+# at time   5037492 ns AREF : Auto Refresh
+# at time   5037672 ns AREF : Auto Refresh
+# at time   5037852 ns AREF : Auto Refresh
+# at time   5038032 ns AREF : Auto Refresh
+# at time   5067892 ns PRE  : Bank = ALL
+# at time   5067972 ns AREF : Auto Refresh
+# at time   5068152 ns AREF : Auto Refresh
+# at time   5068332 ns AREF : Auto Refresh
+# at time   5068512 ns AREF : Auto Refresh
+# at time   5068692 ns AREF : Auto Refresh
+# at time   5068872 ns AREF : Auto Refresh
+# at time   5098732 ns PRE  : Bank = ALL
+# at time   5098812 ns AREF : Auto Refresh
+# at time   5098992 ns AREF : Auto Refresh
+# at time   5099172 ns AREF : Auto Refresh
+# at time   5099352 ns AREF : Auto Refresh
+# at time   5099532 ns AREF : Auto Refresh
+# at time   5099712 ns AREF : Auto Refresh
+# at time   5129572 ns PRE  : Bank = ALL
+# at time   5129652 ns AREF : Auto Refresh
+# at time   5129832 ns AREF : Auto Refresh
+# at time   5130012 ns AREF : Auto Refresh
+# at time   5130192 ns AREF : Auto Refresh
+# at time   5130372 ns AREF : Auto Refresh
+# at time   5130552 ns AREF : Auto Refresh
+# at time   5160412 ns PRE  : Bank = ALL
+# at time   5160492 ns AREF : Auto Refresh
+# at time   5160672 ns AREF : Auto Refresh
+# at time   5160852 ns AREF : Auto Refresh
+# at time   5161032 ns AREF : Auto Refresh
+# at time   5161212 ns AREF : Auto Refresh
+# at time   5161392 ns AREF : Auto Refresh
+# at time   5191252 ns PRE  : Bank = ALL
+# at time   5191332 ns AREF : Auto Refresh
+# at time   5191512 ns AREF : Auto Refresh
+# at time   5191692 ns AREF : Auto Refresh
+# at time   5191872 ns AREF : Auto Refresh
+# at time   5192052 ns AREF : Auto Refresh
+# at time   5192232 ns AREF : Auto Refresh
+# at time   5222092 ns PRE  : Bank = ALL
+# at time   5222172 ns AREF : Auto Refresh
+# at time   5222352 ns AREF : Auto Refresh
+# at time   5222532 ns AREF : Auto Refresh
+# at time   5222712 ns AREF : Auto Refresh
+# at time   5222892 ns AREF : Auto Refresh
+# at time   5223072 ns AREF : Auto Refresh
+# at time   5252932 ns PRE  : Bank = ALL
+# at time   5253012 ns AREF : Auto Refresh
+# at time   5253192 ns AREF : Auto Refresh
+# at time   5253372 ns AREF : Auto Refresh
+# at time   5253552 ns AREF : Auto Refresh
+# at time   5253732 ns AREF : Auto Refresh
+# at time   5253912 ns AREF : Auto Refresh
+# at time   5283772 ns PRE  : Bank = ALL
+# at time   5283852 ns AREF : Auto Refresh
+# at time   5284032 ns AREF : Auto Refresh
+# at time   5284212 ns AREF : Auto Refresh
+# at time   5284392 ns AREF : Auto Refresh
+# at time   5284572 ns AREF : Auto Refresh
+# at time   5284752 ns AREF : Auto Refresh
+# at time   5314612 ns PRE  : Bank = ALL
+# at time   5314692 ns AREF : Auto Refresh
+# at time   5314872 ns AREF : Auto Refresh
+# at time   5315052 ns AREF : Auto Refresh
+# at time   5315232 ns AREF : Auto Refresh
+# at time   5315412 ns AREF : Auto Refresh
+# at time   5315592 ns AREF : Auto Refresh
+# at time   5345452 ns PRE  : Bank = ALL
+# at time   5345532 ns AREF : Auto Refresh
+# at time   5345712 ns AREF : Auto Refresh
+# at time   5345892 ns AREF : Auto Refresh
+# at time   5346072 ns AREF : Auto Refresh
+# at time   5346252 ns AREF : Auto Refresh
+# at time   5346432 ns AREF : Auto Refresh
+# at time   5376292 ns PRE  : Bank = ALL
+# at time   5376372 ns AREF : Auto Refresh
+# at time   5376552 ns AREF : Auto Refresh
+# at time   5376732 ns AREF : Auto Refresh
+# at time   5376912 ns AREF : Auto Refresh
+# at time   5377092 ns AREF : Auto Refresh
+# at time   5377272 ns AREF : Auto Refresh
+# at time   5407132 ns PRE  : Bank = ALL
+# at time   5407212 ns AREF : Auto Refresh
+# at time   5407392 ns AREF : Auto Refresh
+# at time   5407572 ns AREF : Auto Refresh
+# at time   5407752 ns AREF : Auto Refresh
+# at time   5407932 ns AREF : Auto Refresh
+# at time   5408112 ns AREF : Auto Refresh
+# at time   5437972 ns PRE  : Bank = ALL
+# at time   5438052 ns AREF : Auto Refresh
+# at time   5438232 ns AREF : Auto Refresh
+# at time   5438412 ns AREF : Auto Refresh
+# at time   5438592 ns AREF : Auto Refresh
+# at time   5438772 ns AREF : Auto Refresh
+# at time   5438952 ns AREF : Auto Refresh
+# at time   5468812 ns PRE  : Bank = ALL
+# at time   5468892 ns AREF : Auto Refresh
+# at time   5469072 ns AREF : Auto Refresh
+# at time   5469252 ns AREF : Auto Refresh
+# at time   5469432 ns AREF : Auto Refresh
+# at time   5469612 ns AREF : Auto Refresh
+# at time   5469792 ns AREF : Auto Refresh
+# at time   5499652 ns PRE  : Bank = ALL
+# at time   5499732 ns AREF : Auto Refresh
+# at time   5499912 ns AREF : Auto Refresh
+# at time   5500092 ns AREF : Auto Refresh
+# at time   5500272 ns AREF : Auto Refresh
+# at time   5500452 ns AREF : Auto Refresh
+# at time   5500632 ns AREF : Auto Refresh
+# at time   5530492 ns PRE  : Bank = ALL
+# at time   5530572 ns AREF : Auto Refresh
+# at time   5530752 ns AREF : Auto Refresh
+# at time   5530932 ns AREF : Auto Refresh
+# at time   5531112 ns AREF : Auto Refresh
+# at time   5531292 ns AREF : Auto Refresh
+# at time   5531472 ns AREF : Auto Refresh
+# at time   5561332 ns PRE  : Bank = ALL
+# at time   5561412 ns AREF : Auto Refresh
+# at time   5561592 ns AREF : Auto Refresh
+# at time   5561772 ns AREF : Auto Refresh
+# at time   5561952 ns AREF : Auto Refresh
+# at time   5562132 ns AREF : Auto Refresh
+# at time   5562312 ns AREF : Auto Refresh
+# at time   5592172 ns PRE  : Bank = ALL
+# at time   5592252 ns AREF : Auto Refresh
+# at time   5592432 ns AREF : Auto Refresh
+# at time   5592612 ns AREF : Auto Refresh
+# at time   5592792 ns AREF : Auto Refresh
+# at time   5592972 ns AREF : Auto Refresh
+# at time   5593152 ns AREF : Auto Refresh
+# at time   5623012 ns PRE  : Bank = ALL
+# at time   5623092 ns AREF : Auto Refresh
+# at time   5623272 ns AREF : Auto Refresh
+# at time   5623452 ns AREF : Auto Refresh
+# at time   5623632 ns AREF : Auto Refresh
+# at time   5623812 ns AREF : Auto Refresh
+# at time   5623992 ns AREF : Auto Refresh
+# at time   5653852 ns PRE  : Bank = ALL
+# at time   5653932 ns AREF : Auto Refresh
+# at time   5654112 ns AREF : Auto Refresh
+# at time   5654292 ns AREF : Auto Refresh
+# at time   5654472 ns AREF : Auto Refresh
+# at time   5654652 ns AREF : Auto Refresh
+# at time   5654832 ns AREF : Auto Refresh
+# at time   5684692 ns PRE  : Bank = ALL
+# at time   5684772 ns AREF : Auto Refresh
+# at time   5684952 ns AREF : Auto Refresh
+# at time   5685132 ns AREF : Auto Refresh
+# at time   5685312 ns AREF : Auto Refresh
+# at time   5685492 ns AREF : Auto Refresh
+# at time   5685672 ns AREF : Auto Refresh
+# at time   5715532 ns PRE  : Bank = ALL
+# at time   5715612 ns AREF : Auto Refresh
+# at time   5715792 ns AREF : Auto Refresh
+# at time   5715972 ns AREF : Auto Refresh
+# at time   5716152 ns AREF : Auto Refresh
+# at time   5716332 ns AREF : Auto Refresh
+# at time   5716512 ns AREF : Auto Refresh
+# at time   5746372 ns PRE  : Bank = ALL
+# at time   5746452 ns AREF : Auto Refresh
+# at time   5746632 ns AREF : Auto Refresh
+# at time   5746812 ns AREF : Auto Refresh
+# at time   5746992 ns AREF : Auto Refresh
+# at time   5747172 ns AREF : Auto Refresh
+# at time   5747352 ns AREF : Auto Refresh
+# at time   5777212 ns PRE  : Bank = ALL
+# at time   5777292 ns AREF : Auto Refresh
+# at time   5777472 ns AREF : Auto Refresh
+# at time   5777652 ns AREF : Auto Refresh
+# at time   5777832 ns AREF : Auto Refresh
+# at time   5778012 ns AREF : Auto Refresh
+# at time   5778192 ns AREF : Auto Refresh
+# at time   5808052 ns PRE  : Bank = ALL
+# at time   5808132 ns AREF : Auto Refresh
+# at time   5808312 ns AREF : Auto Refresh
+# at time   5808492 ns AREF : Auto Refresh
+# at time   5808672 ns AREF : Auto Refresh
+# at time   5808852 ns AREF : Auto Refresh
+# at time   5809032 ns AREF : Auto Refresh
+# at time   5838892 ns PRE  : Bank = ALL
+# at time   5838972 ns AREF : Auto Refresh
+# at time   5839152 ns AREF : Auto Refresh
+# at time   5839332 ns AREF : Auto Refresh
+# at time   5839512 ns AREF : Auto Refresh
+# at time   5839692 ns AREF : Auto Refresh
+# at time   5839872 ns AREF : Auto Refresh
+# at time   5869732 ns PRE  : Bank = ALL
+# at time   5869812 ns AREF : Auto Refresh
+# at time   5869992 ns AREF : Auto Refresh
+# at time   5870172 ns AREF : Auto Refresh
+# at time   5870352 ns AREF : Auto Refresh
+# at time   5870532 ns AREF : Auto Refresh
+# at time   5870712 ns AREF : Auto Refresh
+# at time   5900572 ns PRE  : Bank = ALL
+# at time   5900652 ns AREF : Auto Refresh
+# at time   5900832 ns AREF : Auto Refresh
+# at time   5901012 ns AREF : Auto Refresh
+# at time   5901192 ns AREF : Auto Refresh
+# at time   5901372 ns AREF : Auto Refresh
+# at time   5901552 ns AREF : Auto Refresh
+# at time   5931412 ns PRE  : Bank = ALL
+# at time   5931492 ns AREF : Auto Refresh
+# at time   5931672 ns AREF : Auto Refresh
+# at time   5931852 ns AREF : Auto Refresh
+# at time   5932032 ns AREF : Auto Refresh
+# at time   5932212 ns AREF : Auto Refresh
+# at time   5932392 ns AREF : Auto Refresh
+# at time   5962252 ns PRE  : Bank = ALL
+# at time   5962332 ns AREF : Auto Refresh
+# at time   5962512 ns AREF : Auto Refresh
+# at time   5962692 ns AREF : Auto Refresh
+# at time   5962872 ns AREF : Auto Refresh
+# at time   5963052 ns AREF : Auto Refresh
+# at time   5963232 ns AREF : Auto Refresh
+# at time   5993092 ns PRE  : Bank = ALL
+# at time   5993172 ns AREF : Auto Refresh
+# at time   5993352 ns AREF : Auto Refresh
+# at time   5993532 ns AREF : Auto Refresh
+# at time   5993712 ns AREF : Auto Refresh
+# at time   5993892 ns AREF : Auto Refresh
+# at time   5994072 ns AREF : Auto Refresh
+# at time   6023932 ns PRE  : Bank = ALL
+# at time   6024012 ns AREF : Auto Refresh
+# at time   6024192 ns AREF : Auto Refresh
+# at time   6024372 ns AREF : Auto Refresh
+# at time   6024552 ns AREF : Auto Refresh
+# at time   6024732 ns AREF : Auto Refresh
+# at time   6024912 ns AREF : Auto Refresh
+# at time   6054772 ns PRE  : Bank = ALL
+# at time   6054852 ns AREF : Auto Refresh
+# at time   6055032 ns AREF : Auto Refresh
+# at time   6055212 ns AREF : Auto Refresh
+# at time   6055392 ns AREF : Auto Refresh
+# at time   6055572 ns AREF : Auto Refresh
+# at time   6055752 ns AREF : Auto Refresh
+# at time   6085612 ns PRE  : Bank = ALL
+# at time   6085692 ns AREF : Auto Refresh
+# at time   6085872 ns AREF : Auto Refresh
+# at time   6086052 ns AREF : Auto Refresh
+# at time   6086232 ns AREF : Auto Refresh
+# at time   6086412 ns AREF : Auto Refresh
+# at time   6086592 ns AREF : Auto Refresh
+# at time   6116452 ns PRE  : Bank = ALL
+# at time   6116532 ns AREF : Auto Refresh
+# at time   6116712 ns AREF : Auto Refresh
+# at time   6116892 ns AREF : Auto Refresh
+# at time   6117072 ns AREF : Auto Refresh
+# at time   6117252 ns AREF : Auto Refresh
+# at time   6117432 ns AREF : Auto Refresh
+# at time   6147292 ns PRE  : Bank = ALL
+# at time   6147372 ns AREF : Auto Refresh
+# at time   6147552 ns AREF : Auto Refresh
+# at time   6147732 ns AREF : Auto Refresh
+# at time   6147912 ns AREF : Auto Refresh
+# at time   6148092 ns AREF : Auto Refresh
+# at time   6148272 ns AREF : Auto Refresh
+# at time   6178132 ns PRE  : Bank = ALL
+# at time   6178212 ns AREF : Auto Refresh
+# at time   6178392 ns AREF : Auto Refresh
+# at time   6178572 ns AREF : Auto Refresh
+# at time   6178752 ns AREF : Auto Refresh
+# at time   6178932 ns AREF : Auto Refresh
+# at time   6179112 ns AREF : Auto Refresh
+# at time   6208972 ns PRE  : Bank = ALL
+# at time   6209052 ns AREF : Auto Refresh
+# at time   6209232 ns AREF : Auto Refresh
+# at time   6209412 ns AREF : Auto Refresh
+# at time   6209592 ns AREF : Auto Refresh
+# at time   6209772 ns AREF : Auto Refresh
+# at time   6209952 ns AREF : Auto Refresh
+# at time   6239812 ns PRE  : Bank = ALL
+# at time   6239892 ns AREF : Auto Refresh
+# at time   6240072 ns AREF : Auto Refresh
+# at time   6240252 ns AREF : Auto Refresh
+# at time   6240432 ns AREF : Auto Refresh
+# at time   6240612 ns AREF : Auto Refresh
+# at time   6240792 ns AREF : Auto Refresh
+# at time   6270652 ns PRE  : Bank = ALL
+# at time   6270732 ns AREF : Auto Refresh
+# at time   6270912 ns AREF : Auto Refresh
+# at time   6271092 ns AREF : Auto Refresh
+# at time   6271272 ns AREF : Auto Refresh
+# at time   6271452 ns AREF : Auto Refresh
+# at time   6271632 ns AREF : Auto Refresh
+# at time   6301492 ns PRE  : Bank = ALL
+# at time   6301572 ns AREF : Auto Refresh
+# at time   6301752 ns AREF : Auto Refresh
+# at time   6301932 ns AREF : Auto Refresh
+# at time   6302112 ns AREF : Auto Refresh
+# at time   6302292 ns AREF : Auto Refresh
+# at time   6302472 ns AREF : Auto Refresh
+# at time   6332332 ns PRE  : Bank = ALL
+# at time   6332412 ns AREF : Auto Refresh
+# at time   6332592 ns AREF : Auto Refresh
+# at time   6332772 ns AREF : Auto Refresh
+# at time   6332952 ns AREF : Auto Refresh
+# at time   6333132 ns AREF : Auto Refresh
+# at time   6333312 ns AREF : Auto Refresh
+# at time   6363172 ns PRE  : Bank = ALL
+# at time   6363252 ns AREF : Auto Refresh
+# at time   6363432 ns AREF : Auto Refresh
+# at time   6363612 ns AREF : Auto Refresh
+# at time   6363792 ns AREF : Auto Refresh
+# at time   6363972 ns AREF : Auto Refresh
+# at time   6364152 ns AREF : Auto Refresh
+# at time   6394012 ns PRE  : Bank = ALL
+# at time   6394092 ns AREF : Auto Refresh
+# at time   6394272 ns AREF : Auto Refresh
+# at time   6394452 ns AREF : Auto Refresh
+# at time   6394632 ns AREF : Auto Refresh
+# at time   6394812 ns AREF : Auto Refresh
+# at time   6394992 ns AREF : Auto Refresh
+# at time   6424852 ns PRE  : Bank = ALL
+# at time   6424932 ns AREF : Auto Refresh
+# at time   6425112 ns AREF : Auto Refresh
+# at time   6425292 ns AREF : Auto Refresh
+# at time   6425472 ns AREF : Auto Refresh
+# at time   6425652 ns AREF : Auto Refresh
+# at time   6425832 ns AREF : Auto Refresh
+# at time   6455692 ns PRE  : Bank = ALL
+# at time   6455772 ns AREF : Auto Refresh
+# at time   6455952 ns AREF : Auto Refresh
+# at time   6456132 ns AREF : Auto Refresh
+# at time   6456312 ns AREF : Auto Refresh
+# at time   6456492 ns AREF : Auto Refresh
+# at time   6456672 ns AREF : Auto Refresh
+# at time   6486532 ns PRE  : Bank = ALL
+# at time   6486612 ns AREF : Auto Refresh
+# at time   6486792 ns AREF : Auto Refresh
+# at time   6486972 ns AREF : Auto Refresh
+# at time   6487152 ns AREF : Auto Refresh
+# at time   6487332 ns AREF : Auto Refresh
+# at time   6487512 ns AREF : Auto Refresh
+# at time   6517372 ns PRE  : Bank = ALL
+# at time   6517452 ns AREF : Auto Refresh
+# at time   6517632 ns AREF : Auto Refresh
+# at time   6517812 ns AREF : Auto Refresh
+# at time   6517992 ns AREF : Auto Refresh
+# at time   6518172 ns AREF : Auto Refresh
+# at time   6518352 ns AREF : Auto Refresh
+# at time   6548212 ns PRE  : Bank = ALL
+# at time   6548292 ns AREF : Auto Refresh
+# at time   6548472 ns AREF : Auto Refresh
+# at time   6548652 ns AREF : Auto Refresh
+# at time   6548832 ns AREF : Auto Refresh
+# at time   6549012 ns AREF : Auto Refresh
+# at time   6549192 ns AREF : Auto Refresh
+# at time   6579052 ns PRE  : Bank = ALL
+# at time   6579132 ns AREF : Auto Refresh
+# at time   6579312 ns AREF : Auto Refresh
+# at time   6579492 ns AREF : Auto Refresh
+# at time   6579672 ns AREF : Auto Refresh
+# at time   6579852 ns AREF : Auto Refresh
+# at time   6580032 ns AREF : Auto Refresh
+# at time   6609892 ns PRE  : Bank = ALL
+# at time   6609972 ns AREF : Auto Refresh
+# at time   6610152 ns AREF : Auto Refresh
+# at time   6610332 ns AREF : Auto Refresh
+# at time   6610512 ns AREF : Auto Refresh
+# at time   6610692 ns AREF : Auto Refresh
+# at time   6610872 ns AREF : Auto Refresh
+# at time   6640732 ns PRE  : Bank = ALL
+# at time   6640812 ns AREF : Auto Refresh
+# at time   6640992 ns AREF : Auto Refresh
+# at time   6641172 ns AREF : Auto Refresh
+# at time   6641352 ns AREF : Auto Refresh
+# at time   6641532 ns AREF : Auto Refresh
+# at time   6641712 ns AREF : Auto Refresh
+# at time   6671572 ns PRE  : Bank = ALL
+# at time   6671652 ns AREF : Auto Refresh
+# at time   6671832 ns AREF : Auto Refresh
+# at time   6672012 ns AREF : Auto Refresh
+# at time   6672192 ns AREF : Auto Refresh
+# at time   6672372 ns AREF : Auto Refresh
+# at time   6672552 ns AREF : Auto Refresh
+# at time   6702412 ns PRE  : Bank = ALL
+# at time   6702492 ns AREF : Auto Refresh
+# at time   6702672 ns AREF : Auto Refresh
+# at time   6702852 ns AREF : Auto Refresh
+# at time   6703032 ns AREF : Auto Refresh
+# at time   6703212 ns AREF : Auto Refresh
+# at time   6703392 ns AREF : Auto Refresh
+# at time   6733252 ns PRE  : Bank = ALL
+# at time   6733332 ns AREF : Auto Refresh
+# at time   6733512 ns AREF : Auto Refresh
+# at time   6733692 ns AREF : Auto Refresh
+# at time   6733872 ns AREF : Auto Refresh
+# at time   6734052 ns AREF : Auto Refresh
+# at time   6734232 ns AREF : Auto Refresh
+# at time   6764092 ns PRE  : Bank = ALL
+# at time   6764172 ns AREF : Auto Refresh
+# at time   6764352 ns AREF : Auto Refresh
+# at time   6764532 ns AREF : Auto Refresh
+# at time   6764712 ns AREF : Auto Refresh
+# at time   6764892 ns AREF : Auto Refresh
+# at time   6765072 ns AREF : Auto Refresh
+# at time   6794932 ns PRE  : Bank = ALL
+# at time   6795012 ns AREF : Auto Refresh
+# at time   6795192 ns AREF : Auto Refresh
+# at time   6795372 ns AREF : Auto Refresh
+# at time   6795552 ns AREF : Auto Refresh
+# at time   6795732 ns AREF : Auto Refresh
+# at time   6795912 ns AREF : Auto Refresh
+# at time   6825772 ns PRE  : Bank = ALL
+# at time   6825852 ns AREF : Auto Refresh
+# at time   6826032 ns AREF : Auto Refresh
+# at time   6826212 ns AREF : Auto Refresh
+# at time   6826392 ns AREF : Auto Refresh
+# at time   6826572 ns AREF : Auto Refresh
+# at time   6826752 ns AREF : Auto Refresh
+# at time   6856612 ns PRE  : Bank = ALL
+# at time   6856692 ns AREF : Auto Refresh
+# at time   6856872 ns AREF : Auto Refresh
+# at time   6857052 ns AREF : Auto Refresh
+# at time   6857232 ns AREF : Auto Refresh
+# at time   6857412 ns AREF : Auto Refresh
+# at time   6857592 ns AREF : Auto Refresh
+# at time   6887452 ns PRE  : Bank = ALL
+# at time   6887532 ns AREF : Auto Refresh
+# at time   6887712 ns AREF : Auto Refresh
+# at time   6887892 ns AREF : Auto Refresh
+# at time   6888072 ns AREF : Auto Refresh
+# at time   6888252 ns AREF : Auto Refresh
+# at time   6888432 ns AREF : Auto Refresh
+# at time   6918292 ns PRE  : Bank = ALL
+# at time   6918372 ns AREF : Auto Refresh
+# at time   6918552 ns AREF : Auto Refresh
+# at time   6918732 ns AREF : Auto Refresh
+# at time   6918912 ns AREF : Auto Refresh
+# at time   6919092 ns AREF : Auto Refresh
+# at time   6919272 ns AREF : Auto Refresh
+# at time   6949132 ns PRE  : Bank = ALL
+# at time   6949212 ns AREF : Auto Refresh
+# at time   6949392 ns AREF : Auto Refresh
+# at time   6949572 ns AREF : Auto Refresh
+# at time   6949752 ns AREF : Auto Refresh
+# at time   6949932 ns AREF : Auto Refresh
+# at time   6950112 ns AREF : Auto Refresh
+# at time   6979972 ns PRE  : Bank = ALL
+# at time   6980052 ns AREF : Auto Refresh
+# at time   6980232 ns AREF : Auto Refresh
+# at time   6980412 ns AREF : Auto Refresh
+# at time   6980592 ns AREF : Auto Refresh
+# at time   6980772 ns AREF : Auto Refresh
+# at time   6980952 ns AREF : Auto Refresh
+# at time   7010812 ns PRE  : Bank = ALL
+# at time   7010892 ns AREF : Auto Refresh
+# at time   7011072 ns AREF : Auto Refresh
+# at time   7011252 ns AREF : Auto Refresh
+# at time   7011432 ns AREF : Auto Refresh
+# at time   7011612 ns AREF : Auto Refresh
+# at time   7011792 ns AREF : Auto Refresh
+# at time   7041652 ns PRE  : Bank = ALL
+# at time   7041732 ns AREF : Auto Refresh
+# at time   7041912 ns AREF : Auto Refresh
+# at time   7042092 ns AREF : Auto Refresh
+# at time   7042272 ns AREF : Auto Refresh
+# at time   7042452 ns AREF : Auto Refresh
+# at time   7042632 ns AREF : Auto Refresh
+# at time   7072492 ns PRE  : Bank = ALL
+# at time   7072572 ns AREF : Auto Refresh
+# at time   7072752 ns AREF : Auto Refresh
+# at time   7072932 ns AREF : Auto Refresh
+# at time   7073112 ns AREF : Auto Refresh
+# at time   7073292 ns AREF : Auto Refresh
+# at time   7073472 ns AREF : Auto Refresh
+# at time   7103332 ns PRE  : Bank = ALL
+# at time   7103412 ns AREF : Auto Refresh
+# at time   7103592 ns AREF : Auto Refresh
+# at time   7103772 ns AREF : Auto Refresh
+# at time   7103952 ns AREF : Auto Refresh
+# at time   7104132 ns AREF : Auto Refresh
+# at time   7104312 ns AREF : Auto Refresh
+# at time   7134172 ns PRE  : Bank = ALL
+# at time   7134252 ns AREF : Auto Refresh
+# at time   7134432 ns AREF : Auto Refresh
+# at time   7134612 ns AREF : Auto Refresh
+# at time   7134792 ns AREF : Auto Refresh
+# at time   7134972 ns AREF : Auto Refresh
+# at time   7135152 ns AREF : Auto Refresh
+# at time   7165012 ns PRE  : Bank = ALL
+# at time   7165092 ns AREF : Auto Refresh
+# at time   7165272 ns AREF : Auto Refresh
+# at time   7165452 ns AREF : Auto Refresh
+# at time   7165632 ns AREF : Auto Refresh
+# at time   7165812 ns AREF : Auto Refresh
+# at time   7165992 ns AREF : Auto Refresh
+# at time   7195852 ns PRE  : Bank = ALL
+# at time   7195932 ns AREF : Auto Refresh
+# at time   7196112 ns AREF : Auto Refresh
+# at time   7196292 ns AREF : Auto Refresh
+# at time   7196472 ns AREF : Auto Refresh
+# at time   7196652 ns AREF : Auto Refresh
+# at time   7196832 ns AREF : Auto Refresh
+# at time   7226692 ns PRE  : Bank = ALL
+# at time   7226772 ns AREF : Auto Refresh
+# at time   7226952 ns AREF : Auto Refresh
+# at time   7227132 ns AREF : Auto Refresh
+# at time   7227312 ns AREF : Auto Refresh
+# at time   7227492 ns AREF : Auto Refresh
+# at time   7227672 ns AREF : Auto Refresh
+# at time   7257532 ns PRE  : Bank = ALL
+# at time   7257612 ns AREF : Auto Refresh
+# at time   7257792 ns AREF : Auto Refresh
+# at time   7257972 ns AREF : Auto Refresh
+# at time   7258152 ns AREF : Auto Refresh
+# at time   7258332 ns AREF : Auto Refresh
+# at time   7258512 ns AREF : Auto Refresh
+# at time   7288372 ns PRE  : Bank = ALL
+# at time   7288452 ns AREF : Auto Refresh
+# at time   7288632 ns AREF : Auto Refresh
+# at time   7288812 ns AREF : Auto Refresh
+# at time   7288992 ns AREF : Auto Refresh
+# at time   7289172 ns AREF : Auto Refresh
+# at time   7289352 ns AREF : Auto Refresh
+# at time   7319212 ns PRE  : Bank = ALL
+# at time   7319292 ns AREF : Auto Refresh
+# at time   7319472 ns AREF : Auto Refresh
+# at time   7319652 ns AREF : Auto Refresh
+# at time   7319832 ns AREF : Auto Refresh
+# at time   7320012 ns AREF : Auto Refresh
+# at time   7320192 ns AREF : Auto Refresh
+# at time   7350052 ns PRE  : Bank = ALL
+# at time   7350132 ns AREF : Auto Refresh
+# at time   7350312 ns AREF : Auto Refresh
+# at time   7350492 ns AREF : Auto Refresh
+# at time   7350672 ns AREF : Auto Refresh
+# at time   7350852 ns AREF : Auto Refresh
+# at time   7351032 ns AREF : Auto Refresh
+# at time   7380892 ns PRE  : Bank = ALL
+# at time   7380972 ns AREF : Auto Refresh
+# at time   7381152 ns AREF : Auto Refresh
+# at time   7381332 ns AREF : Auto Refresh
+# at time   7381512 ns AREF : Auto Refresh
+# at time   7381692 ns AREF : Auto Refresh
+# at time   7381872 ns AREF : Auto Refresh
+# at time   7411732 ns PRE  : Bank = ALL
+# at time   7411812 ns AREF : Auto Refresh
+# at time   7411992 ns AREF : Auto Refresh
+# at time   7412172 ns AREF : Auto Refresh
+# at time   7412352 ns AREF : Auto Refresh
+# at time   7412532 ns AREF : Auto Refresh
+# at time   7412712 ns AREF : Auto Refresh
+# at time   7442572 ns PRE  : Bank = ALL
+# at time   7442652 ns AREF : Auto Refresh
+# at time   7442832 ns AREF : Auto Refresh
+# at time   7443012 ns AREF : Auto Refresh
+# at time   7443192 ns AREF : Auto Refresh
+# at time   7443372 ns AREF : Auto Refresh
+# at time   7443552 ns AREF : Auto Refresh
+# at time   7473412 ns PRE  : Bank = ALL
+# at time   7473492 ns AREF : Auto Refresh
+# at time   7473672 ns AREF : Auto Refresh
+# at time   7473852 ns AREF : Auto Refresh
+# at time   7474032 ns AREF : Auto Refresh
+# at time   7474212 ns AREF : Auto Refresh
+# at time   7474392 ns AREF : Auto Refresh
+# at time   7504252 ns PRE  : Bank = ALL
+# at time   7504332 ns AREF : Auto Refresh
+# at time   7504512 ns AREF : Auto Refresh
+# at time   7504692 ns AREF : Auto Refresh
+# at time   7504872 ns AREF : Auto Refresh
+# at time   7505052 ns AREF : Auto Refresh
+# at time   7505232 ns AREF : Auto Refresh
+# at time   7535092 ns PRE  : Bank = ALL
+# at time   7535172 ns AREF : Auto Refresh
+# at time   7535352 ns AREF : Auto Refresh
+# at time   7535532 ns AREF : Auto Refresh
+# at time   7535712 ns AREF : Auto Refresh
+# at time   7535892 ns AREF : Auto Refresh
+# at time   7536072 ns AREF : Auto Refresh
+# at time   7565932 ns PRE  : Bank = ALL
+# at time   7566012 ns AREF : Auto Refresh
+# at time   7566192 ns AREF : Auto Refresh
+# at time   7566372 ns AREF : Auto Refresh
+# at time   7566552 ns AREF : Auto Refresh
+# at time   7566732 ns AREF : Auto Refresh
+# at time   7566912 ns AREF : Auto Refresh
+# at time   7596772 ns PRE  : Bank = ALL
+# at time   7596852 ns AREF : Auto Refresh
+# at time   7597032 ns AREF : Auto Refresh
+# at time   7597212 ns AREF : Auto Refresh
+# at time   7597392 ns AREF : Auto Refresh
+# at time   7597572 ns AREF : Auto Refresh
+# at time   7597752 ns AREF : Auto Refresh
+# at time   7627612 ns PRE  : Bank = ALL
+# at time   7627692 ns AREF : Auto Refresh
+# at time   7627872 ns AREF : Auto Refresh
+# at time   7628052 ns AREF : Auto Refresh
+# at time   7628232 ns AREF : Auto Refresh
+# at time   7628412 ns AREF : Auto Refresh
+# at time   7628592 ns AREF : Auto Refresh
+# at time   7658452 ns PRE  : Bank = ALL
+# at time   7658532 ns AREF : Auto Refresh
+# at time   7658712 ns AREF : Auto Refresh
+# at time   7658892 ns AREF : Auto Refresh
+# at time   7659072 ns AREF : Auto Refresh
+# at time   7659252 ns AREF : Auto Refresh
+# at time   7659432 ns AREF : Auto Refresh
+# at time   7689292 ns PRE  : Bank = ALL
+# at time   7689372 ns AREF : Auto Refresh
+# at time   7689552 ns AREF : Auto Refresh
+# at time   7689732 ns AREF : Auto Refresh
+# at time   7689912 ns AREF : Auto Refresh
+# at time   7690092 ns AREF : Auto Refresh
+# at time   7690272 ns AREF : Auto Refresh
+# at time   7720132 ns PRE  : Bank = ALL
+# at time   7720212 ns AREF : Auto Refresh
+# at time   7720392 ns AREF : Auto Refresh
+# at time   7720572 ns AREF : Auto Refresh
+# at time   7720752 ns AREF : Auto Refresh
+# at time   7720932 ns AREF : Auto Refresh
+# at time   7721112 ns AREF : Auto Refresh
+# at time   7750972 ns PRE  : Bank = ALL
+# at time   7751052 ns AREF : Auto Refresh
+# at time   7751232 ns AREF : Auto Refresh
+# at time   7751412 ns AREF : Auto Refresh
+# at time   7751592 ns AREF : Auto Refresh
+# at time   7751772 ns AREF : Auto Refresh
+# at time   7751952 ns AREF : Auto Refresh
+# at time   7781812 ns PRE  : Bank = ALL
+# at time   7781892 ns AREF : Auto Refresh
+# at time   7782072 ns AREF : Auto Refresh
+# at time   7782252 ns AREF : Auto Refresh
+# at time   7782432 ns AREF : Auto Refresh
+# at time   7782612 ns AREF : Auto Refresh
+# at time   7782792 ns AREF : Auto Refresh
+# at time   7812652 ns PRE  : Bank = ALL
+# at time   7812732 ns AREF : Auto Refresh
+# at time   7812912 ns AREF : Auto Refresh
+# at time   7813092 ns AREF : Auto Refresh
+# at time   7813272 ns AREF : Auto Refresh
+# at time   7813452 ns AREF : Auto Refresh
+# at time   7813632 ns AREF : Auto Refresh
+# at time   7843492 ns PRE  : Bank = ALL
+# at time   7843572 ns AREF : Auto Refresh
+# at time   7843752 ns AREF : Auto Refresh
+# at time   7843932 ns AREF : Auto Refresh
+# at time   7844112 ns AREF : Auto Refresh
+# at time   7844292 ns AREF : Auto Refresh
+# at time   7844472 ns AREF : Auto Refresh
+# at time   7874332 ns PRE  : Bank = ALL
+# at time   7874412 ns AREF : Auto Refresh
+# at time   7874592 ns AREF : Auto Refresh
+# at time   7874772 ns AREF : Auto Refresh
+# at time   7874952 ns AREF : Auto Refresh
+# at time   7875132 ns AREF : Auto Refresh
+# at time   7875312 ns AREF : Auto Refresh
+# at time   7905172 ns PRE  : Bank = ALL
+# at time   7905252 ns AREF : Auto Refresh
+# at time   7905432 ns AREF : Auto Refresh
+# at time   7905612 ns AREF : Auto Refresh
+# at time   7905792 ns AREF : Auto Refresh
+# at time   7905972 ns AREF : Auto Refresh
+# at time   7906152 ns AREF : Auto Refresh
+# at time   7936012 ns PRE  : Bank = ALL
+# at time   7936092 ns AREF : Auto Refresh
+# at time   7936272 ns AREF : Auto Refresh
+# at time   7936452 ns AREF : Auto Refresh
+# at time   7936632 ns AREF : Auto Refresh
+# at time   7936812 ns AREF : Auto Refresh
+# at time   7936992 ns AREF : Auto Refresh
+# at time   7966852 ns PRE  : Bank = ALL
+# at time   7966932 ns AREF : Auto Refresh
+# at time   7967112 ns AREF : Auto Refresh
+# at time   7967292 ns AREF : Auto Refresh
+# at time   7967472 ns AREF : Auto Refresh
+# at time   7967652 ns AREF : Auto Refresh
+# at time   7967832 ns AREF : Auto Refresh
+# at time   7997692 ns PRE  : Bank = ALL
+# at time   7997772 ns AREF : Auto Refresh
+# at time   7997952 ns AREF : Auto Refresh
+# at time   7998132 ns AREF : Auto Refresh
+# at time   7998312 ns AREF : Auto Refresh
+# at time   7998492 ns AREF : Auto Refresh
+# at time   7998672 ns AREF : Auto Refresh
+# at time   8028532 ns PRE  : Bank = ALL
+# at time   8028612 ns AREF : Auto Refresh
+# at time   8028792 ns AREF : Auto Refresh
+# at time   8028972 ns AREF : Auto Refresh
+# at time   8029152 ns AREF : Auto Refresh
+# at time   8029332 ns AREF : Auto Refresh
+# at time   8029512 ns AREF : Auto Refresh
+# at time   8059372 ns PRE  : Bank = ALL
+# at time   8059452 ns AREF : Auto Refresh
+# at time   8059632 ns AREF : Auto Refresh
+# at time   8059812 ns AREF : Auto Refresh
+# at time   8059992 ns AREF : Auto Refresh
+# at time   8060172 ns AREF : Auto Refresh
+# at time   8060352 ns AREF : Auto Refresh
+# at time   8090212 ns PRE  : Bank = ALL
+# at time   8090292 ns AREF : Auto Refresh
+# at time   8090472 ns AREF : Auto Refresh
+# at time   8090652 ns AREF : Auto Refresh
+# at time   8090832 ns AREF : Auto Refresh
+# at time   8091012 ns AREF : Auto Refresh
+# at time   8091192 ns AREF : Auto Refresh
+# at time   8121052 ns PRE  : Bank = ALL
+# at time   8121132 ns AREF : Auto Refresh
+# at time   8121312 ns AREF : Auto Refresh
+# at time   8121492 ns AREF : Auto Refresh
+# at time   8121672 ns AREF : Auto Refresh
+# at time   8121852 ns AREF : Auto Refresh
+# at time   8122032 ns AREF : Auto Refresh
+# at time   8151892 ns PRE  : Bank = ALL
+# at time   8151972 ns AREF : Auto Refresh
+# at time   8152152 ns AREF : Auto Refresh
+# at time   8152332 ns AREF : Auto Refresh
+# at time   8152512 ns AREF : Auto Refresh
+# at time   8152692 ns AREF : Auto Refresh
+# at time   8152872 ns AREF : Auto Refresh
+# at time   8182732 ns PRE  : Bank = ALL
+# at time   8182812 ns AREF : Auto Refresh
+# at time   8182992 ns AREF : Auto Refresh
+# at time   8183172 ns AREF : Auto Refresh
+# at time   8183352 ns AREF : Auto Refresh
+# at time   8183532 ns AREF : Auto Refresh
+# at time   8183712 ns AREF : Auto Refresh
+# at time   8213572 ns PRE  : Bank = ALL
+# at time   8213652 ns AREF : Auto Refresh
+# at time   8213832 ns AREF : Auto Refresh
+# at time   8214012 ns AREF : Auto Refresh
+# at time   8214192 ns AREF : Auto Refresh
+# at time   8214372 ns AREF : Auto Refresh
+# at time   8214552 ns AREF : Auto Refresh
+# at time   8244412 ns PRE  : Bank = ALL
+# at time   8244492 ns AREF : Auto Refresh
+# at time   8244672 ns AREF : Auto Refresh
+# at time   8244852 ns AREF : Auto Refresh
+# at time   8245032 ns AREF : Auto Refresh
+# at time   8245212 ns AREF : Auto Refresh
+# at time   8245392 ns AREF : Auto Refresh
+# at time   8275252 ns PRE  : Bank = ALL
+# at time   8275332 ns AREF : Auto Refresh
+# at time   8275512 ns AREF : Auto Refresh
+# at time   8275692 ns AREF : Auto Refresh
+# at time   8275872 ns AREF : Auto Refresh
+# at time   8276052 ns AREF : Auto Refresh
+# at time   8276232 ns AREF : Auto Refresh
+# at time   8306092 ns PRE  : Bank = ALL
+# at time   8306172 ns AREF : Auto Refresh
+# at time   8306352 ns AREF : Auto Refresh
+# at time   8306532 ns AREF : Auto Refresh
+# at time   8306712 ns AREF : Auto Refresh
+# at time   8306892 ns AREF : Auto Refresh
+# at time   8307072 ns AREF : Auto Refresh
+# at time   8336932 ns PRE  : Bank = ALL
+# at time   8337012 ns AREF : Auto Refresh
+# at time   8337192 ns AREF : Auto Refresh
+# at time   8337372 ns AREF : Auto Refresh
+# at time   8337552 ns AREF : Auto Refresh
+# at time   8337732 ns AREF : Auto Refresh
+# at time   8337912 ns AREF : Auto Refresh
+# at time   8367772 ns PRE  : Bank = ALL
+# at time   8367852 ns AREF : Auto Refresh
+# at time   8368032 ns AREF : Auto Refresh
+# at time   8368212 ns AREF : Auto Refresh
+# at time   8368392 ns AREF : Auto Refresh
+# at time   8368572 ns AREF : Auto Refresh
+# at time   8368752 ns AREF : Auto Refresh
+# at time   8398612 ns PRE  : Bank = ALL
+# at time   8398692 ns AREF : Auto Refresh
+# at time   8398872 ns AREF : Auto Refresh
+# at time   8399052 ns AREF : Auto Refresh
+# at time   8399232 ns AREF : Auto Refresh
+# at time   8399412 ns AREF : Auto Refresh
+# at time   8399592 ns AREF : Auto Refresh
+# at time   8429452 ns PRE  : Bank = ALL
+# at time   8429532 ns AREF : Auto Refresh
+# at time   8429712 ns AREF : Auto Refresh
+# at time   8429892 ns AREF : Auto Refresh
+# at time   8430072 ns AREF : Auto Refresh
+# at time   8430252 ns AREF : Auto Refresh
+# at time   8430432 ns AREF : Auto Refresh
+# at time   8460292 ns PRE  : Bank = ALL
+# at time   8460372 ns AREF : Auto Refresh
+# at time   8460552 ns AREF : Auto Refresh
+# at time   8460732 ns AREF : Auto Refresh
+# at time   8460912 ns AREF : Auto Refresh
+# at time   8461092 ns AREF : Auto Refresh
+# at time   8461272 ns AREF : Auto Refresh
+# at time   8491132 ns PRE  : Bank = ALL
+# at time   8491212 ns AREF : Auto Refresh
+# at time   8491392 ns AREF : Auto Refresh
+# at time   8491572 ns AREF : Auto Refresh
+# at time   8491752 ns AREF : Auto Refresh
+# at time   8491932 ns AREF : Auto Refresh
+# at time   8492112 ns AREF : Auto Refresh
+# at time   8521972 ns PRE  : Bank = ALL
+# at time   8522052 ns AREF : Auto Refresh
+# at time   8522232 ns AREF : Auto Refresh
+# at time   8522412 ns AREF : Auto Refresh
+# at time   8522592 ns AREF : Auto Refresh
+# at time   8522772 ns AREF : Auto Refresh
+# at time   8522952 ns AREF : Auto Refresh
+# at time   8552812 ns PRE  : Bank = ALL
+# at time   8552892 ns AREF : Auto Refresh
+# at time   8553072 ns AREF : Auto Refresh
+# at time   8553252 ns AREF : Auto Refresh
+# at time   8553432 ns AREF : Auto Refresh
+# at time   8553612 ns AREF : Auto Refresh
+# at time   8553792 ns AREF : Auto Refresh
+# at time   8583652 ns PRE  : Bank = ALL
+# at time   8583732 ns AREF : Auto Refresh
+# at time   8583912 ns AREF : Auto Refresh
+# at time   8584092 ns AREF : Auto Refresh
+# at time   8584272 ns AREF : Auto Refresh
+# at time   8584452 ns AREF : Auto Refresh
+# at time   8584632 ns AREF : Auto Refresh
+# at time   8614492 ns PRE  : Bank = ALL
+# at time   8614572 ns AREF : Auto Refresh
+# at time   8614752 ns AREF : Auto Refresh
+# at time   8614932 ns AREF : Auto Refresh
+# at time   8615112 ns AREF : Auto Refresh
+# at time   8615292 ns AREF : Auto Refresh
+# at time   8615472 ns AREF : Auto Refresh
+# at time   8645332 ns PRE  : Bank = ALL
+# at time   8645412 ns AREF : Auto Refresh
+# at time   8645592 ns AREF : Auto Refresh
+# at time   8645772 ns AREF : Auto Refresh
+# at time   8645952 ns AREF : Auto Refresh
+# at time   8646132 ns AREF : Auto Refresh
+# at time   8646312 ns AREF : Auto Refresh
+# at time   8676172 ns PRE  : Bank = ALL
+# at time   8676252 ns AREF : Auto Refresh
+# at time   8676432 ns AREF : Auto Refresh
+# at time   8676612 ns AREF : Auto Refresh
+# at time   8676792 ns AREF : Auto Refresh
+# at time   8676972 ns AREF : Auto Refresh
+# at time   8677152 ns AREF : Auto Refresh
+# at time   8707012 ns PRE  : Bank = ALL
+# at time   8707092 ns AREF : Auto Refresh
+# at time   8707272 ns AREF : Auto Refresh
+# at time   8707452 ns AREF : Auto Refresh
+# at time   8707632 ns AREF : Auto Refresh
+# at time   8707812 ns AREF : Auto Refresh
+# at time   8707992 ns AREF : Auto Refresh
+# at time   8737852 ns PRE  : Bank = ALL
+# at time   8737932 ns AREF : Auto Refresh
+# at time   8738112 ns AREF : Auto Refresh
+# at time   8738292 ns AREF : Auto Refresh
+# at time   8738472 ns AREF : Auto Refresh
+# at time   8738652 ns AREF : Auto Refresh
+# at time   8738832 ns AREF : Auto Refresh
+# at time   8768692 ns PRE  : Bank = ALL
+# at time   8768772 ns AREF : Auto Refresh
+# at time   8768952 ns AREF : Auto Refresh
+# at time   8769132 ns AREF : Auto Refresh
+# at time   8769312 ns AREF : Auto Refresh
+# at time   8769492 ns AREF : Auto Refresh
+# at time   8769672 ns AREF : Auto Refresh
+# at time   8799532 ns PRE  : Bank = ALL
+# at time   8799612 ns AREF : Auto Refresh
+# at time   8799792 ns AREF : Auto Refresh
+# at time   8799972 ns AREF : Auto Refresh
+# at time   8800152 ns AREF : Auto Refresh
+# at time   8800332 ns AREF : Auto Refresh
+# at time   8800512 ns AREF : Auto Refresh
+# at time   8830372 ns PRE  : Bank = ALL
+# at time   8830452 ns AREF : Auto Refresh
+# at time   8830632 ns AREF : Auto Refresh
+# at time   8830812 ns AREF : Auto Refresh
+# at time   8830992 ns AREF : Auto Refresh
+# at time   8831172 ns AREF : Auto Refresh
+# at time   8831352 ns AREF : Auto Refresh
+# at time   8861212 ns PRE  : Bank = ALL
+# at time   8861292 ns AREF : Auto Refresh
+# at time   8861472 ns AREF : Auto Refresh
+# at time   8861652 ns AREF : Auto Refresh
+# at time   8861832 ns AREF : Auto Refresh
+# at time   8862012 ns AREF : Auto Refresh
+# at time   8862192 ns AREF : Auto Refresh
+# at time   8892052 ns PRE  : Bank = ALL
+# at time   8892132 ns AREF : Auto Refresh
+# at time   8892312 ns AREF : Auto Refresh
+# at time   8892492 ns AREF : Auto Refresh
+# at time   8892672 ns AREF : Auto Refresh
+# at time   8892852 ns AREF : Auto Refresh
+# at time   8893032 ns AREF : Auto Refresh
+# at time   8922892 ns PRE  : Bank = ALL
+# at time   8922972 ns AREF : Auto Refresh
+# at time   8923152 ns AREF : Auto Refresh
+# at time   8923332 ns AREF : Auto Refresh
+# at time   8923512 ns AREF : Auto Refresh
+# at time   8923692 ns AREF : Auto Refresh
+# at time   8923872 ns AREF : Auto Refresh
+# at time   8953732 ns PRE  : Bank = ALL
+# at time   8953812 ns AREF : Auto Refresh
+# at time   8953992 ns AREF : Auto Refresh
+# at time   8954172 ns AREF : Auto Refresh
+# at time   8954352 ns AREF : Auto Refresh
+# at time   8954532 ns AREF : Auto Refresh
+# at time   8954712 ns AREF : Auto Refresh
+# at time   8984572 ns PRE  : Bank = ALL
+# at time   8984652 ns AREF : Auto Refresh
+# at time   8984832 ns AREF : Auto Refresh
+# at time   8985012 ns AREF : Auto Refresh
+# at time   8985192 ns AREF : Auto Refresh
+# at time   8985372 ns AREF : Auto Refresh
+# at time   8985552 ns AREF : Auto Refresh
+# at time   9015412 ns PRE  : Bank = ALL
+# at time   9015492 ns AREF : Auto Refresh
+# at time   9015672 ns AREF : Auto Refresh
+# at time   9015852 ns AREF : Auto Refresh
+# at time   9016032 ns AREF : Auto Refresh
+# at time   9016212 ns AREF : Auto Refresh
+# at time   9016392 ns AREF : Auto Refresh
+# at time   9046252 ns PRE  : Bank = ALL
+# at time   9046332 ns AREF : Auto Refresh
+# at time   9046512 ns AREF : Auto Refresh
+# at time   9046692 ns AREF : Auto Refresh
+# at time   9046872 ns AREF : Auto Refresh
+# at time   9047052 ns AREF : Auto Refresh
+# at time   9047232 ns AREF : Auto Refresh
+# at time   9077092 ns PRE  : Bank = ALL
+# at time   9077172 ns AREF : Auto Refresh
+# at time   9077352 ns AREF : Auto Refresh
+# at time   9077532 ns AREF : Auto Refresh
+# at time   9077712 ns AREF : Auto Refresh
+# at time   9077892 ns AREF : Auto Refresh
+# at time   9078072 ns AREF : Auto Refresh
+# at time   9107932 ns PRE  : Bank = ALL
+# at time   9108012 ns AREF : Auto Refresh
+# at time   9108192 ns AREF : Auto Refresh
+# at time   9108372 ns AREF : Auto Refresh
+# at time   9108552 ns AREF : Auto Refresh
+# at time   9108732 ns AREF : Auto Refresh
+# at time   9108912 ns AREF : Auto Refresh
+# at time   9138772 ns PRE  : Bank = ALL
+# at time   9138852 ns AREF : Auto Refresh
+# at time   9139032 ns AREF : Auto Refresh
+# at time   9139212 ns AREF : Auto Refresh
+# at time   9139392 ns AREF : Auto Refresh
+# at time   9139572 ns AREF : Auto Refresh
+# at time   9139752 ns AREF : Auto Refresh
+# at time   9169612 ns PRE  : Bank = ALL
+# at time   9169692 ns AREF : Auto Refresh
+# at time   9169872 ns AREF : Auto Refresh
+# at time   9170052 ns AREF : Auto Refresh
+# at time   9170232 ns AREF : Auto Refresh
+# at time   9170412 ns AREF : Auto Refresh
+# at time   9170592 ns AREF : Auto Refresh
+# at time   9200452 ns PRE  : Bank = ALL
+# at time   9200532 ns AREF : Auto Refresh
+# at time   9200712 ns AREF : Auto Refresh
+# at time   9200892 ns AREF : Auto Refresh
+# at time   9201072 ns AREF : Auto Refresh
+# at time   9201252 ns AREF : Auto Refresh
+# at time   9201432 ns AREF : Auto Refresh
+# at time   9231292 ns PRE  : Bank = ALL
+# at time   9231372 ns AREF : Auto Refresh
+# at time   9231552 ns AREF : Auto Refresh
+# at time   9231732 ns AREF : Auto Refresh
+# at time   9231912 ns AREF : Auto Refresh
+# at time   9232092 ns AREF : Auto Refresh
+# at time   9232272 ns AREF : Auto Refresh
+# at time   9262132 ns PRE  : Bank = ALL
+# at time   9262212 ns AREF : Auto Refresh
+# at time   9262392 ns AREF : Auto Refresh
+# at time   9262572 ns AREF : Auto Refresh
+# at time   9262752 ns AREF : Auto Refresh
+# at time   9262932 ns AREF : Auto Refresh
+# at time   9263112 ns AREF : Auto Refresh
+# at time   9292972 ns PRE  : Bank = ALL
+# at time   9293052 ns AREF : Auto Refresh
+# at time   9293232 ns AREF : Auto Refresh
+# at time   9293412 ns AREF : Auto Refresh
+# at time   9293592 ns AREF : Auto Refresh
+# at time   9293772 ns AREF : Auto Refresh
+# at time   9293952 ns AREF : Auto Refresh
+# at time   9323812 ns PRE  : Bank = ALL
+# at time   9323892 ns AREF : Auto Refresh
+# at time   9324072 ns AREF : Auto Refresh
+# at time   9324252 ns AREF : Auto Refresh
+# at time   9324432 ns AREF : Auto Refresh
+# at time   9324612 ns AREF : Auto Refresh
+# at time   9324792 ns AREF : Auto Refresh
+# at time   9354652 ns PRE  : Bank = ALL
+# at time   9354732 ns AREF : Auto Refresh
+# at time   9354912 ns AREF : Auto Refresh
+# at time   9355092 ns AREF : Auto Refresh
+# at time   9355272 ns AREF : Auto Refresh
+# at time   9355452 ns AREF : Auto Refresh
+# at time   9355632 ns AREF : Auto Refresh
+# at time   9385492 ns PRE  : Bank = ALL
+# at time   9385572 ns AREF : Auto Refresh
+# at time   9385752 ns AREF : Auto Refresh
+# at time   9385932 ns AREF : Auto Refresh
+# at time   9386112 ns AREF : Auto Refresh
+# at time   9386292 ns AREF : Auto Refresh
+# at time   9386472 ns AREF : Auto Refresh
+# at time   9416332 ns PRE  : Bank = ALL
+# at time   9416412 ns AREF : Auto Refresh
+# at time   9416592 ns AREF : Auto Refresh
+# at time   9416772 ns AREF : Auto Refresh
+# at time   9416952 ns AREF : Auto Refresh
+# at time   9417132 ns AREF : Auto Refresh
+# at time   9417312 ns AREF : Auto Refresh
+# at time   9447172 ns PRE  : Bank = ALL
+# at time   9447252 ns AREF : Auto Refresh
+# at time   9447432 ns AREF : Auto Refresh
+# at time   9447612 ns AREF : Auto Refresh
+# at time   9447792 ns AREF : Auto Refresh
+# at time   9447972 ns AREF : Auto Refresh
+# at time   9448152 ns AREF : Auto Refresh
+# at time   9478012 ns PRE  : Bank = ALL
+# at time   9478092 ns AREF : Auto Refresh
+# at time   9478272 ns AREF : Auto Refresh
+# at time   9478452 ns AREF : Auto Refresh
+# at time   9478632 ns AREF : Auto Refresh
+# at time   9478812 ns AREF : Auto Refresh
+# at time   9478992 ns AREF : Auto Refresh
+# at time   9508852 ns PRE  : Bank = ALL
+# at time   9508932 ns AREF : Auto Refresh
+# at time   9509112 ns AREF : Auto Refresh
+# at time   9509292 ns AREF : Auto Refresh
+# at time   9509472 ns AREF : Auto Refresh
+# at time   9509652 ns AREF : Auto Refresh
+# at time   9509832 ns AREF : Auto Refresh
+# at time   9539692 ns PRE  : Bank = ALL
+# at time   9539772 ns AREF : Auto Refresh
+# at time   9539952 ns AREF : Auto Refresh
+# at time   9540132 ns AREF : Auto Refresh
+# at time   9540312 ns AREF : Auto Refresh
+# at time   9540492 ns AREF : Auto Refresh
+# at time   9540672 ns AREF : Auto Refresh
+# at time   9570532 ns PRE  : Bank = ALL
+# at time   9570612 ns AREF : Auto Refresh
+# at time   9570792 ns AREF : Auto Refresh
+# at time   9570972 ns AREF : Auto Refresh
+# at time   9571152 ns AREF : Auto Refresh
+# at time   9571332 ns AREF : Auto Refresh
+# at time   9571512 ns AREF : Auto Refresh
+# at time   9601372 ns PRE  : Bank = ALL
+# at time   9601452 ns AREF : Auto Refresh
+# at time   9601632 ns AREF : Auto Refresh
+# at time   9601812 ns AREF : Auto Refresh
+# at time   9601992 ns AREF : Auto Refresh
+# at time   9602172 ns AREF : Auto Refresh
+# at time   9602352 ns AREF : Auto Refresh
+# at time   9632212 ns PRE  : Bank = ALL
+# at time   9632292 ns AREF : Auto Refresh
+# at time   9632472 ns AREF : Auto Refresh
+# at time   9632652 ns AREF : Auto Refresh
+# at time   9632832 ns AREF : Auto Refresh
+# at time   9633012 ns AREF : Auto Refresh
+# at time   9633192 ns AREF : Auto Refresh
+# at time   9663052 ns PRE  : Bank = ALL
+# at time   9663132 ns AREF : Auto Refresh
+# at time   9663312 ns AREF : Auto Refresh
+# at time   9663492 ns AREF : Auto Refresh
+# at time   9663672 ns AREF : Auto Refresh
+# at time   9663852 ns AREF : Auto Refresh
+# at time   9664032 ns AREF : Auto Refresh
+# at time   9693892 ns PRE  : Bank = ALL
+# at time   9693972 ns AREF : Auto Refresh
+# at time   9694152 ns AREF : Auto Refresh
+# at time   9694332 ns AREF : Auto Refresh
+# at time   9694512 ns AREF : Auto Refresh
+# at time   9694692 ns AREF : Auto Refresh
+# at time   9694872 ns AREF : Auto Refresh
+# at time   9724732 ns PRE  : Bank = ALL
+# at time   9724812 ns AREF : Auto Refresh
+# at time   9724992 ns AREF : Auto Refresh
+# at time   9725172 ns AREF : Auto Refresh
+# at time   9725352 ns AREF : Auto Refresh
+# at time   9725532 ns AREF : Auto Refresh
+# at time   9725712 ns AREF : Auto Refresh
+# at time   9755572 ns PRE  : Bank = ALL
+# at time   9755652 ns AREF : Auto Refresh
+# at time   9755832 ns AREF : Auto Refresh
+# at time   9756012 ns AREF : Auto Refresh
+# at time   9756192 ns AREF : Auto Refresh
+# at time   9756372 ns AREF : Auto Refresh
+# at time   9756552 ns AREF : Auto Refresh
+# at time   9786412 ns PRE  : Bank = ALL
+# at time   9786492 ns AREF : Auto Refresh
+# at time   9786672 ns AREF : Auto Refresh
+# at time   9786852 ns AREF : Auto Refresh
+# at time   9787032 ns AREF : Auto Refresh
+# at time   9787212 ns AREF : Auto Refresh
+# at time   9787392 ns AREF : Auto Refresh
+# at time   9817252 ns PRE  : Bank = ALL
+# at time   9817332 ns AREF : Auto Refresh
+# at time   9817512 ns AREF : Auto Refresh
+# at time   9817692 ns AREF : Auto Refresh
+# at time   9817872 ns AREF : Auto Refresh
+# at time   9818052 ns AREF : Auto Refresh
+# at time   9818232 ns AREF : Auto Refresh
+# at time   9848092 ns PRE  : Bank = ALL
+# at time   9848172 ns AREF : Auto Refresh
+# at time   9848352 ns AREF : Auto Refresh
+# at time   9848532 ns AREF : Auto Refresh
+# at time   9848712 ns AREF : Auto Refresh
+# at time   9848892 ns AREF : Auto Refresh
+# at time   9849072 ns AREF : Auto Refresh
+# at time   9878932 ns PRE  : Bank = ALL
+# at time   9879012 ns AREF : Auto Refresh
+# at time   9879192 ns AREF : Auto Refresh
+# at time   9879372 ns AREF : Auto Refresh
+# at time   9879552 ns AREF : Auto Refresh
+# at time   9879732 ns AREF : Auto Refresh
+# at time   9879912 ns AREF : Auto Refresh
+# at time   9909772 ns PRE  : Bank = ALL
+# at time   9909852 ns AREF : Auto Refresh
+# at time   9910032 ns AREF : Auto Refresh
+# at time   9910212 ns AREF : Auto Refresh
+# at time   9910392 ns AREF : Auto Refresh
+# at time   9910572 ns AREF : Auto Refresh
+# at time   9910752 ns AREF : Auto Refresh
+# at time   9940612 ns PRE  : Bank = ALL
+# at time   9940692 ns AREF : Auto Refresh
+# at time   9940872 ns AREF : Auto Refresh
+# at time   9941052 ns AREF : Auto Refresh
+# at time   9941232 ns AREF : Auto Refresh
+# at time   9941412 ns AREF : Auto Refresh
+# at time   9941592 ns AREF : Auto Refresh
+# at time   9971452 ns PRE  : Bank = ALL
+# at time   9971532 ns AREF : Auto Refresh
+# at time   9971712 ns AREF : Auto Refresh
+# at time   9971892 ns AREF : Auto Refresh
+# at time   9972072 ns AREF : Auto Refresh
+# at time   9972252 ns AREF : Auto Refresh
+# at time   9972432 ns AREF : Auto Refresh
+# ** Note: $finish    : ./top.sv(206)
+#    Time: 10 ms  Iteration: 0  Instance: /top
+# 1
+# Break at ./top.sv line 206
